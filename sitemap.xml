@@ -47,6 +47,15 @@
   </url>
   
   <url>
+    <loc>https://www.liuxk.online/posts/5c2fafc7.html</loc>
+    
+    <lastmod>2025-07-07</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
     <loc>https://www.liuxk.online/categories/index.html</loc>
     
     <lastmod>2023-03-22</lastmod>
@@ -92,7 +101,7 @@
   </url>
   
   <url>
-    <loc>https://www.liuxk.online/life/movies/index.html</loc>
+    <loc>https://www.liuxk.online/life/games/index.html</loc>
     
     <lastmod>2023-03-22</lastmod>
     
@@ -101,7 +110,7 @@
   </url>
   
   <url>
-    <loc>https://www.liuxk.online/life/games/index.html</loc>
+    <loc>https://www.liuxk.online/life/movies/index.html</loc>
     
     <lastmod>2023-03-22</lastmod>
     
@@ -119,15 +128,6 @@
   </url>
   
   <url>
-    <loc>https://www.liuxk.online/social/fcircle/index.html</loc>
-    
-    <lastmod>2023-03-22</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
     <loc>https://www.liuxk.online/site/census/index.html</loc>
     
     <lastmod>2023-03-22</lastmod>
@@ -137,9 +137,9 @@
   </url>
   
   <url>
-    <loc>https://www.liuxk.online/posts/2013454d.html</loc>
+    <loc>https://www.liuxk.online/social/fcircle/index.html</loc>
     
-    <lastmod>2022-10-23</lastmod>
+    <lastmod>2023-03-22</lastmod>
     
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
@@ -180,7 +180,7 @@
 
   
   <url>
-    <loc>https://www.liuxk.online/categories/%E6%BC%94%E7%A4%BA/</loc>
+    <loc>https://www.liuxk.online/categories/%E6%9D%A5%E5%90%A7%E5%B1%95%E7%A4%BA/</loc>
     <lastmod>2025-07-14</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
