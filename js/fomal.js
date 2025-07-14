@@ -3019,9 +3019,9 @@ function reload() {
   window.location.reload();
 }
 
-// 侧边栏开关
+// 侧边栏开关 block-开 none 关
 if (localStorage.getItem("rs") == undefined) {
-  localStorage.setItem("rs", "block");
+  localStorage.setItem("rs", "none");
 }
 if (localStorage.getItem("rs") == "block") {
   document.getElementById("rightSide").innerText = `:root{--rightside-display: block}`;
