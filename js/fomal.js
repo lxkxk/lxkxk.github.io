@@ -3176,7 +3176,7 @@ if (localStorage.getItem("blogbg") != undefined) {
 } else {
   document.getElementById("defineBg").innerText = `:root{
     --default-bg: url(/img/lll.jpg);
-    --darkmode-bg:url(/img/lll.jpg);
+    --darkmode-bg:url(/img/yw.png);
     --mobileday-bg: url(/img/sj_bt.jpg);
     --mobilenight-bg: url(/img/sj_yw.jpg);
   }`;

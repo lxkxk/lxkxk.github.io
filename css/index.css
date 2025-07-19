@@ -8531,11 +8531,11 @@ li.categoryBar-list-item {
 }
 
 /* 星空手机模式消失 */
-@media screen and (max-width: 768px) {
+/* @media screen and (max-width: 768px) {
   #universe {
     display: none !important;
   }
-}
+} */
 
 /* 星空白天模式消失 */
 [data-theme='light'] #universe {
