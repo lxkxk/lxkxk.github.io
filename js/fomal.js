@@ -1198,7 +1198,7 @@ console.warn = function () { };
 function switchNightMode() {
   document.querySelector('body').insertAdjacentHTML('beforeend', '<div class="Cuteen_DarkSky"><div class="Cuteen_DarkPlanet"><div id="sun"></div><div id="moon"></div></div></div>'),
     setTimeout(function () {
-      document.querySelector('body').classList.contains('DarkMode') ? (document.querySelector('body').classList.remove('DarkMode'), localStorage.setItem('isDark', '0'), document.getElementById('modeicon').setAttribute('xlink:href', '#icon-moon')) : (document.querySelector('body').classList.add('DarkMode'), localStorage.setItem('isDark', '1'), document.getElementById('modeicon').setAttribute('xlink:href', '#icon-sun')),
+      document.querySelector('body').classList.contains('DarkMode') ? (document.querySelector('body').classList.remove('DarkMode'), localStorage.setItem('isDark', '0'), document.getElementById('modeicon').setAttribute('xlink:href', '#icon-yueliang')) : (document.querySelector('body').classList.add('DarkMode'), localStorage.setItem('isDark', '1'), document.getElementById('modeicon').setAttribute('xlink:href', '#icon-taiyang')),
         setTimeout(function () {
           document.getElementsByClassName('Cuteen_DarkSky')[0].style.transition = 'opacity 3s';
           document.getElementsByClassName('Cuteen_DarkSky')[0].style.opacity = '0';
@@ -1220,7 +1220,7 @@ function switchNightMode() {
     activateDarkMode()
     saveToLocal.set('theme', 'dark', 2)
     // GLOBAL_CONFIG.Snackbar !== undefined && btf.snackbarShow(GLOBAL_CONFIG.Snackbar.day_to_night)
-    document.getElementById('modeicon').setAttribute('xlink:href', '#icon-sun')
+    document.getElementById('modeicon').setAttribute('xlink:href', '#icon-taiyang')
     // 延时弹窗提醒
     setTimeout(() => {
       new Vue({
@@ -1248,7 +1248,7 @@ function switchNightMode() {
 
     activateLightMode()
     saveToLocal.set('theme', 'light', 2)
-    document.querySelector('body').classList.add('DarkMode'), document.getElementById('modeicon').setAttribute('xlink:href', '#icon-moon')
+    document.querySelector('body').classList.add('DarkMode'), document.getElementById('modeicon').setAttribute('xlink:href', '#icon-yueliang')
     setTimeout(() => {
       new Vue({
         data: function () {
@@ -3021,7 +3021,7 @@ function reload() {
 
 // 侧边栏开关 block-开 none 关
 if (localStorage.getItem("rs") == undefined) {
-  localStorage.setItem("rs", "none");
+  localStorage.setItem("rs", "block");
 }
 if (localStorage.getItem("rs") == "block") {
   document.getElementById("rightSide").innerText = `:root{--rightside-display: block}`;
