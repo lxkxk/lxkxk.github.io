@@ -2805,11 +2805,13 @@ function createtime() {
   let currentTimeHtml = "";
   (currentTimeHtml =
     hnum < 18 && hnum >= 9
-      ? `<img class='boardsign' src='https://lskypro.acozycotage.net/Fomalhaut/badge/F小屋-科研摸鱼中.svg' title='什么时候能够实现财富自由呀~'><br> <div style="font-size:13px;font-weight:bold">本站居然运行了 ${dnum} 天 ${hnum} 小时 ${mnum} 分 ${snum} 秒 <i id="heartbeat" class='fas fa-heartbeat'></i> <br> 旅行者 1 号当前距离地球 ${dis} 千米，约为 ${unit} 个天文单位 🚀</div>`
-      : `<img class='boardsign' src='https://lskypro.acozycotage.net/Fomalhaut/badge/F小屋-下班休息啦.svg' title='下班了就该开开心心地玩耍~'><br> <div style="font-size:13px;font-weight:bold">本站居然运行了 ${dnum} 天 ${hnum} 小时 ${mnum} 分 ${snum} 秒 <i id="heartbeat" class='fas fa-heartbeat'></i> <br> 旅行者 1 号当前距离地球 ${dis} 千米，约为 ${unit} 个天文单位 🚀</div>`),
+      ? `<img class='boardsign' src='https://img.shields.io/badge/糖果屋-营业中-6adea8?style=social&logo=cakephp' title='什么时候能够实现财富自由呀~'><br> <div style="font-size:13px;font-weight:bold">本站居然运行了 ${dnum} 天 ${hnum} 小时 ${mnum} 分 ${snum} 秒 <i id="heartbeat" class='fas fa-heartbeat'></i> <br> 旅行者 1 号当前距离地球 ${dis} 千米，约为 ${unit} 个天文单位 🚀</div>`
+      : `<img class='boardsign' src='https://img.shields.io/badge/糖果屋-打烊了-6adea8?style=social&logo=coffeescript' title='下班了就该开开心心地玩耍~'><br> <div style="font-size:13px;font-weight:bold">本站居然运行了 ${dnum} 天 ${hnum} 小时 ${mnum} 分 ${snum} 秒 <i id="heartbeat" class='fas fa-heartbeat'></i> <br> 旅行者 1 号当前距离地球 ${dis} 千米，约为 ${unit} 个天文单位 🚀</div>`),
     document.getElementById("workboard") &&
     (document.getElementById("workboard").innerHTML = currentTimeHtml);
 }
+// https://lskypro.acozycotage.net/Fomalhaut/badge/F小屋-科研摸鱼中.svg
+// https://lskypro.acozycotage.net/Fomalhaut/badge/F小屋-下班休息啦.svg
 // 设置重复执行函数，周期1000ms
 setInterval(() => {
   createtime();
@@ -2821,57 +2823,57 @@ setInterval(() => {
 
 
 /* fps检测 start */
-if (window.localStorage.getItem("fpson") == undefined || window.localStorage.getItem("fpson") == "1") {
-  var rAF = function () {
-    return (
-      window.requestAnimationFrame ||
-      window.webkitRequestAnimationFrame ||
-      function (callback) {
-        window.setTimeout(callback, 1000 / 60);
-      }
-    );
-  }();
-  var frame = 0;
-  var allFrameCount = 0;
-  var lastTime = Date.now();
-  var lastFameTime = Date.now();
-  var loop = function () {
-    var now = Date.now();
-    var fs = (now - lastFameTime);
-    var fps = Math.round(1000 / fs);
+// if (window.localStorage.getItem("fpson") == undefined || window.localStorage.getItem("fpson") == "1") {
+//   var rAF = function () {
+//     return (
+//       window.requestAnimationFrame ||
+//       window.webkitRequestAnimationFrame ||
+//       function (callback) {
+//         window.setTimeout(callback, 1000 / 60);
+//       }
+//     );
+//   }();
+//   var frame = 0;
+//   var allFrameCount = 0;
+//   var lastTime = Date.now();
+//   var lastFameTime = Date.now();
+//   var loop = function () {
+//     var now = Date.now();
+//     var fs = (now - lastFameTime);
+//     var fps = Math.round(1000 / fs);
 
-    lastFameTime = now;
-    // 不置 0，在动画的开头及结尾记录此值的差值算出 FPS
-    allFrameCount++;
-    frame++;
+//     lastFameTime = now;
+//     // 不置 0，在动画的开头及结尾记录此值的差值算出 FPS
+//     allFrameCount++;
+//     frame++;
 
-    if (now > 1000 + lastTime) {
-      var fps = Math.round((frame * 1000) / (now - lastTime));
-      if (fps <= 5) {
-        var kd = `<span style="color:#bd0000">卡成ppt🤢</span>`
-      } else if (fps <= 15) {
-        var kd = `<span style="color:red">电竞级帧率😖</span>`
-      } else if (fps <= 25) {
-        var kd = `<span style="color:orange">有点难受😨</span>`
-      } else if (fps < 35) {
-        var kd = `<span style="color:#9338e6">不太流畅🙄</span>`
-      } else if (fps <= 45) {
-        var kd = `<span style="color:#08b7e4">还不错哦😁</span>`
-      } else {
-        var kd = `<span style="color:#39c5bb">十分流畅🤣</span>`
-      }
-      document.getElementById("fps").innerHTML = `FPS:${fps} ${kd}`;
-      frame = 0;
-      lastTime = now;
-    };
+//     if (now > 1000 + lastTime) {
+//       var fps = Math.round((frame * 1000) / (now - lastTime));
+//       if (fps <= 5) {
+//         var kd = `<span style="color:#bd0000">卡成ppt🤢</span>`
+//       } else if (fps <= 15) {
+//         var kd = `<span style="color:red">电竞级帧率😖</span>`
+//       } else if (fps <= 25) {
+//         var kd = `<span style="color:orange">有点难受😨</span>`
+//       } else if (fps < 35) {
+//         var kd = `<span style="color:#9338e6">不太流畅🙄</span>`
+//       } else if (fps <= 45) {
+//         var kd = `<span style="color:#08b7e4">还不错哦😁</span>`
+//       } else {
+//         var kd = `<span style="color:#39c5bb">十分流畅🤣</span>`
+//       }
+//       document.getElementById("fps").innerHTML = `FPS:${fps} ${kd}`;
+//       frame = 0;
+//       lastTime = now;
+//     };
 
-    rAF(loop);
-  }
+//     rAF(loop);
+//   }
 
-  loop();
-} else {
-  document.getElementById("fps").style = "display:none!important"
-}
+//   loop();
+// } else {
+//   document.getElementById("fps").style = "display:none!important"
+// }
 /* fps检测 end */
 
 //----------------------------------------------------------------
