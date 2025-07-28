@@ -155,15 +155,6 @@
   </url>
   
   <url>
-    <loc>https://www.liuxk.online/box/nav/index.html</loc>
-    
-    <lastmod>2023-03-22</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
     <loc>https://www.liuxk.online/box/gallery/index.html</loc>
     
     <lastmod>2023-03-22</lastmod>
@@ -173,7 +164,7 @@
   </url>
   
   <url>
-    <loc>https://www.liuxk.online/life/games/index.html</loc>
+    <loc>https://www.liuxk.online/box/nav/index.html</loc>
     
     <lastmod>2023-03-22</lastmod>
     
@@ -191,7 +182,7 @@
   </url>
   
   <url>
-    <loc>https://www.liuxk.online/personal/bb/index.html</loc>
+    <loc>https://www.liuxk.online/life/games/index.html</loc>
     
     <lastmod>2023-03-22</lastmod>
     
@@ -201,6 +192,15 @@
   
   <url>
     <loc>https://www.liuxk.online/site/census/index.html</loc>
+    
+    <lastmod>2023-03-22</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.liuxk.online/personal/bb/index.html</loc>
     
     <lastmod>2023-03-22</lastmod>
     
@@ -232,14 +232,14 @@
   </url>
   
   <url>
-    <loc>https://www.liuxk.online/tags/js%E5%90%8C%E6%AD%A5%E4%B8%8E%E5%BC%82%E6%AD%A5%E4%BB%BB%E5%8A%A1/</loc>
+    <loc>https://www.liuxk.online/tags/this%E7%94%A8%E6%B3%95/</loc>
     <lastmod>2025-07-28</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
-    <loc>https://www.liuxk.online/tags/this%E7%94%A8%E6%B3%95/</loc>
+    <loc>https://www.liuxk.online/tags/js%E5%90%8C%E6%AD%A5%E4%B8%8E%E5%BC%82%E6%AD%A5%E4%BB%BB%E5%8A%A1/</loc>
     <lastmod>2025-07-28</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
@@ -283,13 +283,6 @@
   </url>
   
   <url>
-    <loc>https://www.liuxk.online/categories/js%E4%B8%AD%E7%9A%84%E4%BB%BB%E5%8A%A1/</loc>
-    <lastmod>2025-07-28</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
     <loc>https://www.liuxk.online/categories/js%E4%B8%AD%E7%9A%84this%E7%94%A8%E6%B3%95/</loc>
     <lastmod>2025-07-28</lastmod>
     <changefreq>weekly</changefreq>
@@ -298,6 +291,13 @@
   
   <url>
     <loc>https://www.liuxk.online/categories/%E8%A6%81%E5%8D%87%E7%BA%A7%E7%89%88%E6%9C%AC%E4%BA%86/</loc>
+    <lastmod>2025-07-28</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.liuxk.online/categories/js%E4%B8%AD%E7%9A%84%E4%BB%BB%E5%8A%A1/</loc>
     <lastmod>2025-07-28</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
