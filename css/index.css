@@ -8075,8 +8075,8 @@ a:hover {
 /* 帧率检测 */
 #fps {
   position: fixed;
-  left: 10px;
-  bottom: 10px;
+  left: 0;
+  bottom: 67px;
   z-index: 1919810;
 }
 [data-theme='light'] #fps {
@@ -9374,6 +9374,80 @@ hr:before {
   scale: 1.05;
   transition: all 0.3s ease-in-out;
 }
+
+/* #nav-right {
+  position: relative;
+  background: transparent;
+  z-index: 1;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+#nav-right::before {
+  content: '';
+  position: absolute;
+  top: -3px;
+  left: -3px;
+  right: -3px;
+  bottom: -3px;
+  background: conic-gradient(red, orange, yellow, green, cyan, blue, violet, red);
+  border-radius: 10px;
+  z-index: -1;
+  animation: rotateBorder 3s linear infinite;
+  padding: 3px;
+  -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+  -webkit-mask-composite: xor;
+  mask-composite: exclude;
+}
+
+@keyframes rotateBorder {
+  to {
+    transform: rotate(1turn);
+  }
+} */
+
+/* #nav-right {
+  position: relative;
+  background-color: transparent;
+  z-index: 1;
+}
+#nav-right::before {
+  content: '';
+  position: absolute;
+  top: -2px;
+  left: -2px;
+  right: -2px;
+  bottom: -2px;
+  background: linear-gradient(45deg, red, orange, yellow, green, cyan, blue, violet, red);
+  background-size: 400%;
+  border-radius: 10px;
+  z-index: -1;
+  animation: borderFlow 5s linear infinite;
+  filter: blur(3px);
+}
+
+#nav-right::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: transparent;
+  z-index: -1;
+  border-radius: 8px;
+}
+@keyframes borderFlow {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+} */
 
 .search-dialog {
   position: fixed;
