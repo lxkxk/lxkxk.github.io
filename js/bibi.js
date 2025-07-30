@@ -18,13 +18,16 @@ function getNew() {
     } catch (error) { }
 
     bibi.innerHTML += '<div id="bb_loading"><img src="/assets/loading3.gif" alt="bb_loading"></div>' // bb_loading图片可以f12在我网站源码下载，也可以使用其他图片。
-
-    fetch(Url + page).then(res => res.json()).then((res) => {
+    total = 0
+    nowNum = 0
+    items = []
+    // fetch(Url + page).then(res => res.json()).then((res) => {
+    getData().then((res) => {
         total = res.data.total
         items = res.data.items
         nowNum += items.length
         if (page == 1) {
-            document.querySelector('.bb-info').innerHTML = '<svg style="width:1.20em;height:1.20em;top:5px;fill:currentColor;overflow:hidden;position:relative"><use xlink:href="#icon-chat"></svg> 站长的唠叨(' + total + ')'
+            document.querySelector('.bb-info').innerHTML = '<svg style="width:1.20em;height:1.20em;top:5px;fill:currentColor;overflow:hidden;position:relative"><use xlink:href="#icon-chat"></svg> 站长的吐槽(' + total + ')'
         }
         page += 1
     }).then(() => {
@@ -35,7 +38,148 @@ function getNew() {
         document.getElementById('bibi').removeChild(document.getElementById('bb_loading'))
     })
 }
-
+function getData() {
+    return new Promise((resolve, reject) => {
+        setTimeout(() => {
+            const data = {
+                code: 0,
+                data: {
+                    total: 6,
+                    items: [
+                        {
+                            author: {
+                                avatar: "/img/toux.jpg",
+                                nickName: 'MyStory🥝'
+                            },
+                            content: '一直想dIy一个关于自己的个人网站,无意间在github上看到了一个贼牛逼的开源模板,好了,开始开发！',
+                            createdAt: '2025-06-01',
+                            showComment: '1',
+                            tag: {
+                                bgColor: "#39c5bb",
+                                createdAt: "2025-06-01 23:35:16",
+                                description: "站长的一些日常吐槽",
+                                name: "日常吐槽🌈",
+                                orderNo: 0,
+                                updatedAt: "2025-06-01 23:35:16",
+                                user: "6319fedef46fae97dcfa5ee2"
+                            },
+                            title: '开始开发啦！',
+                            type: '0',
+                            updatedAt: '2025-06-01 23:35:16'
+                        },
+                        {
+                            author: {
+                                avatar: "/img/toux.jpg",
+                                nickName: 'MyStory🥝'
+                            },
+                            content: '今天打游戏打的有点晚了,明天上班要早起,不想写代码了,但是又想快点搭建好,算了算了就写一个小时就碎觉,放一首邓紫棋的歌,哈哈哈',
+                            createdAt: '2025-06-15',
+                            showComment: '1',
+                            tag: {
+                                bgColor: "#39c5bb",
+                                createdAt: "2025-06-01 23:35:16",
+                                description: "站长的一些日常吐槽",
+                                name: "日常吐槽🌈",
+                                orderNo: 0,
+                                updatedAt: "2025-06-01 23:35:16",
+                                user: "6319fedef46fae97dcfa5ee2"
+                            },
+                            title: '开始开发啦！',
+                            type: '0',
+                            updatedAt: '2025-06-01 23:35:16'
+                        },
+                        {
+                            author: {
+                                avatar: "/img/toux.jpg",
+                                nickName: 'MyStory🥝'
+                            },
+                            content: '遇到了很多问题,为什么手机加载的这么慢啊,cdn加速不好使呢,找个大佬帮忙看一看',
+                            createdAt: '2025-06-17',
+                            showComment: '1',
+                            tag: {
+                                bgColor: "#39c5bb",
+                                createdAt: "2025-06-01 23:35:16",
+                                description: "站长的一些日常吐槽",
+                                name: "日常吐槽🌈",
+                                orderNo: 0,
+                                updatedAt: "2025-06-01 23:35:16",
+                                user: "6319fedef46fae97dcfa5ee2"
+                            },
+                            title: '开始开发啦！',
+                            type: '0',
+                            updatedAt: '2025-06-01 23:35:16'
+                        },
+                        {
+                            author: {
+                                avatar: "/img/toux.jpg",
+                                nickName: 'MyStory🥝'
+                            },
+                            content: '域名怎么这么贵！liuxk名字缩写当域名好看吗至少好记一些 我靠.com被注册了一年2万多反正也买不起,换一个！',
+                            createdAt: '2025-07-06',
+                            showComment: '1',
+                            tag: {
+                                bgColor: "#39c5bb",
+                                createdAt: "2025-06-01 23:35:16",
+                                description: "站长的一些日常吐槽",
+                                name: "日常吐槽🌈",
+                                orderNo: 0,
+                                updatedAt: "2025-06-01 23:35:16",
+                                user: "6319fedef46fae97dcfa5ee2"
+                            },
+                            title: '开始开发啦！',
+                            type: '0',
+                            updatedAt: '2025-06-01 23:35:16'
+                        },
+                        {
+                            author: {
+                                avatar: "/img/toux.jpg",
+                                nickName: 'MyStory🥝'
+                            },
+                            content: '终于配置好了可以访问了,但是还是有点丑,不急先美化一下,找一些免费的图标,一切皆白嫖哈哈',
+                            createdAt: '2025-07-13',
+                            showComment: '1',
+                            tag: {
+                                bgColor: "#39c5bb",
+                                createdAt: "2025-06-01 23:35:16",
+                                description: "站长的一些日常吐槽",
+                                name: "日常吐槽🌈",
+                                orderNo: 0,
+                                updatedAt: "2025-06-01 23:35:16",
+                                user: "6319fedef46fae97dcfa5ee2"
+                            },
+                            title: '开始开发啦！',
+                            type: '0',
+                            updatedAt: '2025-06-01 23:35:16'
+                        },
+                        {
+                            author: {
+                                avatar: "/img/toux.jpg",
+                                nickName: 'MyStory🥝'
+                            },
+                            content: '我觉得可以了,有亿点点成就感！先找几个朋友来看看怎么样,希望可以得到好评。。。下个月研究一下评论系统',
+                            createdAt: '2025-07-25',
+                            showComment: '1',
+                            tag: {
+                                bgColor: "#39c5bb",
+                                createdAt: "2025-06-01 23:35:16",
+                                description: "站长的一些日常吐槽",
+                                name: "日常吐槽🌈",
+                                orderNo: 0,
+                                updatedAt: "2025-06-01 23:35:16",
+                                user: "6319fedef46fae97dcfa5ee2"
+                            },
+                            title: '开始开发啦！',
+                            type: '0',
+                            updatedAt: '2025-06-01 23:35:16'
+                        },
+                    ],
+                }
+            }
+            resolve(data); // 成功时调用resolve
+            // 或者 reject(new Error("出错了")); // 出错时调用reject
+        }, 1000);
+    })
+}
 // 渲染数据
 function bb() {
     let bb = document.getElementById('bb-main')
