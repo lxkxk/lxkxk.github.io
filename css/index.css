@@ -1673,7 +1673,7 @@ figure.highlight pre .javascript .function {
 #article-container pre,
 #article-container code {
   font-size: 14.5px;
-  font-family: Consolas_1, var(--global-font), "Microsoft YaHei", Menlo, "PingFang SC", "Microsoft JhengHei", sans-serif !important;
+  font-family: var(--global-font), "Microsoft YaHei", Menlo, "PingFang SC", "Microsoft JhengHei", sans-serif !important;
 }
 #article-container code {
   padding: 2px 4px;
@@ -3892,7 +3892,7 @@ h1.page-title + .tag-cloud-list {
   width: 35px;
   height: 35px;
   border-radius: 50%;
-  background-image: url("/img/toux.jpg");
+  background-image: url("https://i.imgs.ovh/2025/08/02/JVpsr.jpeg");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -4253,7 +4253,7 @@ h1.page-title + .tag-cloud-list {
   transition: filter 375ms ease-in 0.2s;
 }
 #article-container p {
-  margin: 0 0 16px;
+  margin: auto;
 }
 #article-container iframe {
   margin: 0 0 20px;
@@ -6462,24 +6462,32 @@ blockquote.pullquote.right {
   border-radius: 2em !important;
 }
 
+/* @import url('https://cdn.staticfile.org/lxgw-wenkai-webfont/1.7.0/style.css'); */
+
+/* 也可用 @font-face 直接声明 */
+/* @font-face {
+  font-family: 'LXGW';
+  font-display: swap;
+  src: url('https://cdn.staticfile.org/lxgw-wenkai-webfont/1.7.0/files/lxgwwenkai-regular-subset-100.woff2');
+} */
 /* 字体引入 */
-@font-face {
+/* @font-face {
   font-family: YSHST;
   src: url(https://data-static.netdun.net/Fomalhaut/fonts/优设好身体.woff2);
   font-display: swap;
-}
+} */
 
-@font-face {
+/* @font-face {
   font-family: MiSans;
   src: url(https://data-static.netdun.net/Fomalhaut/fonts/MiSans.woff2);
   font-display: swap;
-}
+} */
 
-@font-face {
+/* @font-face {
   font-family: HYTMR;
   src: url(https://data-static.netdun.net/Fomalhaut/fonts/HYTangMeiRen55W.woff2);
   font-display: swap;
-}
+} */
 
 /* @font-face {
   font-family: LXGW;
@@ -6487,23 +6495,23 @@ blockquote.pullquote.right {
   font-display: swap;
 } */
 
-@font-face {
+/* @font-face {
   font-family: TTQHB;
   src: url(https://data-static.netdun.net/Fomalhaut/fonts/甜甜圈海报字体.woff2);
   font-display: swap;
-}
+} */
 
-@font-face {
+/* @font-face {
   font-family: Consolas_1;
   src: url(https://data-static.netdun.net/Fomalhaut/fonts/Consolas.woff2);
   font-display: swap;
-}
+} */
 
-@font-face {
+/* @font-face {
   font-family: ZhuZiAWan;
   src: url(https://data-static.netdun.net/Fomalhaut/fonts/ZhuZiAWan2.woff2);
   font-display: swap;
-}
+} */
 
 /* 特定部件字体调用 */
 div#menus {
@@ -7162,6 +7170,7 @@ h6::before {
   padding-bottom: 75%;
   margin: 3% auto;
   text-align: center;
+  text-align: left;
 }
 .aspect-ratio iframe {
   position: absolute;
@@ -7633,7 +7642,7 @@ input#pic-link {
 /* heo 加载动画头像 */
 .loading-img {
   /* background: url(https://tuchuang.voooe.cn/images/2023/01/02/avatar.webp) */
-  background: url(/img/toux.jpg) no-repeat center center;
+  background: url(https://i.imgs.ovh/2025/08/01/HtVFm.jpeg) no-repeat center center;
   background-size: cover;
 }
 
@@ -8754,9 +8763,14 @@ span.card-clock-weather {
 
 .ft-item-2 .ft-img-group .img-group-item {
   display: inline-block;
-  width: 18.4%;
-  margin-right: 14px;
+  width: 17.2%;
+  margin-right: 10px;
   margin-bottom: 6px;
+}
+
+.ft-item-2 .ft-img-group .img-group-item:nth-child(5),
+.ft-item-2 .ft-img-group .img-group-item:nth-child(10) {
+  margin-right: 0;
 }
 
 .ft-item-2 .ft-img-group .img-group-item a {

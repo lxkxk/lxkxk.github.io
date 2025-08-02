@@ -48,8 +48,8 @@ function getData() {
                     items: [
                         {
                             author: {
-                                avatar: "/img/toux.jpg",
-                                nickName: 'MyStory🥝'
+                                avatar: "https://i.imgs.ovh/2025/08/02/JVpsr.jpeg",
+                                nickName: 'SunFlower🥝'
                             },
                             content: '一直想dIy一个关于自己的个人网站,无意间在github上看到了一个贼牛逼的开源模板,好了,开始开发！',
                             createdAt: '2025-06-01',
@@ -69,8 +69,8 @@ function getData() {
                         },
                         {
                             author: {
-                                avatar: "/img/toux.jpg",
-                                nickName: 'MyStory🥝'
+                                avatar: "https://i.imgs.ovh/2025/08/02/JVpsr.jpeg",
+                                nickName: 'SunFlower🥝'
                             },
                             content: '今天打游戏打的有点晚了,明天上班要早起,不想写代码了,但是又想快点搭建好,算了算了就写一个小时就碎觉,放一首邓紫棋的歌,哈哈哈',
                             createdAt: '2025-06-15',
@@ -90,8 +90,8 @@ function getData() {
                         },
                         {
                             author: {
-                                avatar: "/img/toux.jpg",
-                                nickName: 'MyStory🥝'
+                                avatar: "https://i.imgs.ovh/2025/08/02/JVpsr.jpeg",
+                                nickName: 'SunFlower🥝'
                             },
                             content: '遇到了很多问题,为什么手机加载的这么慢啊,cdn加速不好使呢,找个大佬帮忙看一看',
                             createdAt: '2025-06-17',
@@ -111,8 +111,8 @@ function getData() {
                         },
                         {
                             author: {
-                                avatar: "/img/toux.jpg",
-                                nickName: 'MyStory🥝'
+                                avatar: "https://i.imgs.ovh/2025/08/02/JVpsr.jpeg",
+                                nickName: 'SunFlower🥝'
                             },
                             content: '域名怎么这么贵！liuxk名字缩写当域名好看吗至少好记一些 我靠.com被注册了一年2万多反正也买不起,换一个！',
                             createdAt: '2025-07-06',
@@ -132,8 +132,8 @@ function getData() {
                         },
                         {
                             author: {
-                                avatar: "/img/toux.jpg",
-                                nickName: 'MyStory🥝'
+                                avatar: "https://i.imgs.ovh/2025/08/02/JVpsr.jpeg",
+                                nickName: 'SunFlower🥝'
                             },
                             content: '终于配置好了可以访问了,但是还是有点丑,不急先美化一下,找一些免费的图标,一切皆白嫖哈哈',
                             createdAt: '2025-07-13',
@@ -153,8 +153,8 @@ function getData() {
                         },
                         {
                             author: {
-                                avatar: "/img/toux.jpg",
-                                nickName: 'MyStory🥝'
+                                avatar: "https://i.imgs.ovh/2025/08/02/JVpsr.jpeg",
+                                nickName: 'SunFlower🥝'
                             },
                             content: '我觉得可以了,有亿点点成就感！先找几个朋友来看看怎么样,希望可以得到好评。。。下个月研究一下评论系统',
                             createdAt: '2025-07-25',
