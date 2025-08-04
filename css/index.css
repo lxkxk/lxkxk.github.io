@@ -6462,14 +6462,14 @@ blockquote.pullquote.right {
   border-radius: 2em !important;
 }
 
-/* @import url('https://cdn.staticfile.org/lxgw-wenkai-webfont/1.7.0/style.css'); */
+@import url('https://cdn.staticfile.org/lxgw-wenkai-webfont/1.7.0/style.css');
 
-/* 也可用 @font-face 直接声明 */
-/* @font-face {
+@font-face {
   font-family: 'LXGW';
   font-display: swap;
-  src: url('https://cdn.staticfile.org/lxgw-wenkai-webfont/1.7.0/files/lxgwwenkai-regular-subset-100.woff2');
-} */
+  /* src: url('https://cdn.staticfile.org/lxgw-wenkai-webfont/1.7.0/files/lxgwwenkai-regular-subset-100.woff2') */
+  src: url('/fonts/lxgwwenkai-regular-subset-100.woff2') format(woff2);
+}
 /* 字体引入 */
 /* @font-face {
   font-family: YSHST;
