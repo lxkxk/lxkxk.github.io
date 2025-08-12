@@ -73,7 +73,7 @@ $.ajax({
   type: 'get',
   url: 'https://apis.map.qq.com/ws/location/v1/ip',
   data: {
-    key: '',  // 这里要写你的KEY!!!
+    key: 'NMIBZ-22AKN-Z3MFE-SNUHT-ZMCAS-OXB7E',  // 这里要写你的KEY!!!
     output: 'jsonp',
   },
   dataType: 'jsonp',
@@ -99,7 +99,7 @@ function getDistance(e1, n1, e2, n2) {
 
 function showWelcome() {
 
-  let dist = getDistance(113.34499552, 23.15537143, ipLoacation.result.location.lng, ipLoacation.result.location.lat); //这里换成自己的经纬度
+  let dist = getDistance(116.40717, 39.90469, ipLoacation.result.location.lng, ipLoacation.result.location.lat); //这里换成自己的经纬度
   let pos = ipLoacation.result.ad_info.nation;
   let ip;
   let posdesc;
@@ -302,6 +302,7 @@ document.addEventListener('pjax:complete', showWelcome);
 document.addEventListener('pjax:complete', getWeibo);
 document.addEventListener('DOMContentLoaded', getWeibo);
 
+// https://weibo.eurkon.com/api 微博
 function getWeibo() {
   fetch('').then(data => data.json()).then(data => {  // 这里要写上你的API!!!
     let html = '<style>.weibo-new{background:#ff3852}.weibo-hot{background:#ff9406}.weibo-jyzy{background:#ffc000}.weibo-recommend{background:#00b7ee}.weibo-adrecommend{background:#febd22}.weibo-friend{background:#8fc21e}.weibo-boom{background:#bd0000}.weibo-topic{background:#ff6f49}.weibo-topic-ad{background:#4dadff}.weibo-boil{background:#f86400}#weibo-container{overflow-y:auto;-ms-overflow-style:none;scrollbar-width:none}#weibo-container::-webkit-scrollbar{display:none}.weibo-list-item{display:flex;flex-direction:row;justify-content:space-between;flex-wrap:nowrap}.weibo-title{white-space:nowrap;overflow:hidden;text-overflow:ellipsis;margin-right:auto}.weibo-num{float:right}.weibo-hotness{display:inline-block;padding:0 6px;transform:scale(.8) translateX(-3px);color:#fff;border-radius:8px}</style>'
@@ -622,7 +623,7 @@ function owoBig() {
 
 /* 随便逛逛 start */
 // 随便逛逛
-// 发现有时会和当前页面重复，加一个判断
+// 发现有时会和当前页，加一个面重复判断
 function randomPost() {
   fetch('/baidusitemap.xml').then(res => res.text()).then(str => (new window.DOMParser()).parseFromString(str, "text/xml")).then(data => {
     let ls = data.querySelectorAll('url loc');
@@ -674,7 +675,7 @@ if (document.body.clientWidth > 992) {
         zoom: 0.9,
         borderRadius: 5 + 'px',
         right: 55.6 + 'px',
-        nekoImg: "https://bu.dusays.com/2022/07/20/62d812db74be9.png",
+        nekoImg: "https://i.imgs.ovh/2025/08/12/doWy4.png",
         hoverMsg: "秋天啦~",
         color: "var(--theme-color)",
         during: 500,
@@ -1283,7 +1284,7 @@ function share_() {
     // 截取标题
     var title = document.title;
     var subTitle = title.endsWith("| SunFlower🥝") ? title.substring(0, title.length - 14) : title;
-    navigator.clipboard.writeText('SunFlower🥝的站内分享\n标题：' + subTitle + '\n链接：' + url + '\n欢迎来访！🍭🍭🍭');
+    navigator.clipboard.writeText('SunFlower🥝的站内分享\n标题：' + subTitle + '\n链接：' + url + '\n欢迎来访！🥝');
     new Vue({
       data: function () {
         this.$notify({
@@ -1325,7 +1326,7 @@ document.addEventListener('visibilitychange', function () {
     clearTimeout(titleTime);
   } else {
     //返回当前页面时标签显示内容
-    document.title = '就知道你会回来～😁';
+    document.title = '😁就知道你会回来～';
     //两秒后变回正常标题
     titleTime = setTimeout(function () {
       document.title = OriginTitile;
@@ -2476,7 +2477,7 @@ if (m == 3 && dd == 8) {//妇女节
     sessionStorage.setItem("isPopupWindow", "1");
   }
 }
-l = ["非常抱歉，因为不可控原因，博客将于明天停止运营！", "好消息，日本没了！", "美国垮了，原因竟然是川普！", "微软垮了！", "你的电脑已经过载，建议立即关机！", "你知道吗？站长很喜欢你哦！", "一分钟有61秒哦", "你喜欢的人跟别人跑了！"]
+l = ["你知道吗？站长很喜欢你哦！", "一分钟有61秒哦"]
 if (m == 4 && dd == 1) {//愚人节，随机谎话
   if (sessionStorage.getItem("isPopupWindow") != "1") {
     Swal.fire(l[Math.floor(Math.random() * l.length)]);
@@ -2521,13 +2522,13 @@ if (m == 12 && dd == 25) {//圣诞节
 }
 if (m == 3 && dd == 24) {//站长生日
   if (sessionStorage.getItem("isPopupWindow") != "1") {
-    Swal.fire("祝站长" + (y - 1999).toString() + "岁生日快乐！🥝");
+    Swal.fire("祝站长" + (y - 2000).toString() + "岁生日快乐！🥝");
     sessionStorage.setItem("isPopupWindow", "1");
   }
 }
-// if (m == 6 && dd == 30) {//小猫咪生日
+// if (m == 6 && dd == 6) {//小猫咪生日
 //   if (sessionStorage.getItem("isPopupWindow") != "1") {
-//     Swal.fire("祝小猫咪" + (y - 1999).toString() + "岁生日快乐！🐱");
+//     Swal.fire("祝小猫咪" + (y - 2000).toString() + "岁生日快乐！🐱");
 //     sessionStorage.setItem("isPopupWindow", "1");
 //   }
 // }
@@ -3178,8 +3179,8 @@ if (localStorage.getItem("blogbg") != undefined) {
   setBg(localStorage.getItem("blogbg"));
 } else {
   document.getElementById("defineBg").innerText = `:root{
-    --default-bg: url(https://i.imgs.ovh/2025/08/02/JVe39.jpeg);
-    --darkmode-bg:url(https://i.imgs.ovh/2025/08/03/JorpM.jpeg);
+    --default-bg: url(https://i.imgs.ovh/2025/08/12/lyPIa.jpeg);
+    --darkmode-bg:url(https://i.imgs.ovh/2025/08/02/JVe39.jpeg);
     --mobileday-bg: url(https://i.imgs.ovh/2025/08/02/JU4GH.jpeg);
     --mobilenight-bg: url(https://i.imgs.ovh/2025/08/02/JUdcU.jpeg);
   }`;
