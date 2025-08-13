@@ -99,7 +99,7 @@ function getDistance(e1, n1, e2, n2) {
 
 function showWelcome() {
 
-  let dist = getDistance(116.40717, 39.90469, ipLoacation.result.location.lng, ipLoacation.result.location.lat); //这里换成自己的经纬度
+  let dist = getDistance(116.04219, 39.88517, ipLoacation.result.location.lng, ipLoacation.result.location.lat); //这里换成自己的经纬度
   let pos = ipLoacation.result.ad_info.nation;
   let ip;
   let posdesc;
@@ -140,7 +140,7 @@ function showWelcome() {
           posdesc = "讲段相声吧。";
           break;
         case "河北省":
-          posdesc = "山势巍巍成壁垒，天下雄关。铁马金戈由此向，无限江山。";
+          posdesc = "这么近，那么美，周末还得是来河北！";
           break;
         case "山西省":
           posdesc = "展开坐具长三尺，已占山河五百余。";
@@ -163,7 +163,7 @@ function showWelcome() {
         case "江苏省":
           switch (ipLoacation.result.ad_info.city) {
             case "南京市":
-              posdesc = "这是我挺想去的城市啦。";
+              posdesc = "南京是我挺想去的城市啦。";
               break;
             case "苏州市":
               posdesc = "上有天堂，下有苏杭。";
@@ -208,7 +208,7 @@ function showWelcome() {
           posdesc = "落霞与孤鹜齐飞，秋水共长天一色。";
           break;
         case "山东省":
-          posdesc = "遥望齐州九点烟，一泓海水杯中泻。";
+          posdesc = "好色山东！我的家乡~";
           break;
         case "湖北省":
           posdesc = "来碗热干面！";
