@@ -20504,7 +20504,7 @@ html.hide-aside .layout > div:first-child {
 }
 
 #category-bar {
-  background-color: rgb(233 225 225 / 20%) !important;
+  background-color: rgb(233 225 225 / 40%) !important;
 }
 [data-theme='dark'] #category-bar {
   background-color: rgb(0, 0, 0, 0.2) !important;
@@ -20514,7 +20514,7 @@ html.hide-aside .layout > div:first-child {
   background-color: rgb(233 225 225 / 40%) !important;
 }
 [data-theme='dark'] #footer {
-  background-color: rgb(0, 0, 0, 0.35) !important;
+  background-color: rgb(0, 0, 0, 0.75) !important;
 }
 [data-theme='dark'] #page-header.full_page {
   background-color: rgb(0, 0, 0, 0.4) !important;
@@ -20696,6 +20696,12 @@ html.hide-aside .layout > div:first-child {
 #footer-bar {
   margin-top: 0 !important;
 }
+
+/* 页脚 样式 */
+
+/* #footer-wrap #anzhiyu-footer .footer-title {
+  margin: 0.5rem 0;
+} */
 
 #aside-content .card-widget#card-wechat {
   background: #57bd6a;
