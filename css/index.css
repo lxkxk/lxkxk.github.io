@@ -20661,6 +20661,9 @@ html.hide-aside .layout > div:first-child {
   #footer-wrap #footer_deal .deal_link {
     margin: 1rem 18px;
   }
+  #footer {
+    padding-bottom: 3rem;
+  }
 }
 
 /* 页脚小动物 */
