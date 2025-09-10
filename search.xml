@@ -4,11 +4,38 @@
   
     
     <entry>
+      <title>你是不是也经常为晚上吃什么发愁！</title>
+      <link href="/2025/09/10/2025-09-11-%E4%BB%8A%E6%99%9A%E5%90%83%E4%BB%80%E4%B9%88/"/>
+      <url>/2025/09/10/2025-09-11-%E4%BB%8A%E6%99%9A%E5%90%83%E4%BB%80%E4%B9%88/</url>
+      
+        <content type="html"><![CDATA[<h2 id="世纪难题-今晚吃什么？"><a href="#世纪难题-今晚吃什么？" class="headerlink" title="世纪难题-今晚吃什么？"></a>世纪难题-今晚吃什么？</h2><ul><li>无聊的时候又又又发现了一个网站</li><li><a href="https://cook.yunyoujun.cn/">https://cook.yunyoujun.cn/</a></li><li>就是这个网站 手机电脑都可以进，可以选择常见的食材，有三种模式可以选择</li><li>选择严格模式会严格匹配所选的食材，点击后会跳到哔哩哔哩视频查看具体教程</li><li>下午摸鱼学习好，下班直达菜市场，回家做起来 完美！</li></ul>]]></content>
+      
+      
+      <categories>
+          
+          <category> 一分钟解决今晚吃什么 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 难题之今晚吃什么 </tag>
+            
+            <tag> 食谱 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>新闻(每日自动更新)</title>
       <link href="/2025/09/05/2025-08-04-60s%E8%AF%BB%E6%87%82%E4%B8%96%E7%95%8C/"/>
       <url>/2025/09/05/2025-08-04-60s%E8%AF%BB%E6%87%82%E4%B8%96%E7%95%8C/</url>
       
-        <content type="html"><![CDATA[<div style="background:transparent; padding:20px; border-radius:8px; max-width:800px; margin:0 auto; box-shadow:0 2px 12px rgba(0,0,0,0.08); font-family:-apple-system, sans-serif;">  <div id="newsContainer">    <div style="text-align:center; padding:30px 0;">      <div style="width:50px; height:50px; margin:0 auto 15px; border:3px solid #4285f4; border-radius:50%; border-top-color:transparent; animation:spin 1s linear infinite;"></div>      <p style="color:#4285f4; font-weight:bold; margin:0 0 5px; font-size:1.1em;">《60秒读懂世界》</p>      <p style="color:#666; margin:0 0 25px; line-height:1.5;">        每天60秒，速览全球热点！<br>        精选要闻+极简排版，<br>        帮你高效获取干货，拒绝浪费时间。      </p>      <p style="color:#888; margin:0; font-size:0.95em;">正在加载今日新闻...</p>    </div>  </div></div><script>(function() {  // 获取当天日期  const today = new Date();  const dateString = `${today.getFullYear()}-${String(today.getMonth()+1).padStart(2,'0')}-${String(today.getDate()).padStart(2,'0')}`;    // 隐藏代码元素  document.querySelectorAll('pre, code, script, style').forEach(el => {    el.style.display = 'none';  });    // 加载新闻（带当天日期参数）  fetch(`https://60s.viki.moe/v2/60s?date=${dateString}&encoding=text`)    .then(response => {      if (!response.ok) throw new Error('网络响应不正常');      return response.text();    })    .then(text => {      // 处理文本，从第二条开始添加句号      const lines = text.split('\n').filter(line => line.trim());      const processedText = lines.map((line, index) => {        if (index > 0 && !line.endsWith('。') && !line.endsWith('!') && !line.endsWith('?')) {          return line + '。';        }        return line;      }).join('\n');            document.getElementById('newsContainer').innerHTML = `        <div style="background:transparent; border-radius:6px; padding:20px; box-shadow:inset 0 0 0 1px rgba(0,0,0,0.05); white-space:pre-line; line-height:1.6; font-size:0.95em;">          ${processedText}        </div>        <p style="text-align:right; margin:15px 0 0; font-size:0.9em;">          <span style="background:transparent; padding:3px 8px; border-radius:4px;">${dateString} 更新</span>        </p>      `;    })    .catch(e => {      document.getElementById('newsContainer').innerHTML = `        <div style="text-align:center; padding:20px;">          <div style="font-size:2em; margin-bottom:10px;">⚠️</div>          <p style="margin:0;">今日新闻加载失败，请刷新重试</p>          <p style="margin:10px 0 0; font-size:0.9em;">错误原因：${e.message}</p>        </div>      `;    });})();</script><style>  @keyframes spin { to { transform: rotate(360deg); } }  /* 确保不显示任何代码和默认列表样式 */  pre, code, script, style, ol, ul { display: none !important; }</style>]]></content>
+        <content type="html"><![CDATA[<div style="background:transparent; padding:20px; border-radius:8px; max-width:800px; margin:0 auto; box-shadow:0 2px 12px rgba(0,0,0,0.08); font-family:-apple-system, sans-serif;">  <div id="newsContainer">    <div style="text-align:center; padding:30px 0;">      <div style="width:50px; height:50px; margin:0 auto 15px; border:3px solid #4285f4; border-radius:50%; border-top-color:transparent; animation:spin 1s linear infinite;"></div>      <p style="color:#4285f4; font-weight:bold; margin:0 0 5px; font-size:1.1em;">《60秒读懂世界》</p>      <p style="color:#666; margin:0 0 25px; line-height:1.5;">        每天60秒，速览全球热点！<br>        精选要闻+极简排版，<br>        帮你高效获取干货，拒绝浪费时间。      </p>      <p style="color:#888; margin:0; font-size:0.95em;">正在加载今日新闻...</p>    </div>  </div></div><script>(function() {  // 获取当天日期  const today = new Date();  const dateString = `${today.getFullYear()}-${String(today.getMonth()+1).padStart(2,'0')}-${String(today.getDate()).padStart(2,'0')}`;    // 隐藏代码元素  document.querySelectorAll('pre, code, script, style').forEach(el => {    el.style.display = 'none';  });    // 加载新闻（带当天日期参数）  fetch(`https://60s.viki.moe/v2/60s?date=${dateString}&encoding=text`)    .then(response => {      if (!response.ok) throw new Error('网络响应不正常');      return response.text();    })    .then(text => {      // 处理文本，从第二条开始添加句号      const lines = text.split('\n').filter(line => line.trim());      const processedText = lines.map((line, index) => {        if (index > 0 && !line.endsWith('。') && !line.endsWith('!') && !line.endsWith('?')) {          return line + '。';        }        return line;      }).join('\n');      document.getElementById('newsContainer').innerHTML = `        <div style="background:transparent; border-radius:6px; padding:20px; box-shadow:inset 0 0 0 1px rgba(0,0,0,0.05); white-space:pre-line; line-height:1.6; font-size:0.95em;">          ${processedText}        </div>        <p style="text-align:right; margin:15px 0 0; font-size:0.9em;">          <span style="background:transparent; padding:3px 8px; border-radius:4px;">${dateString} 更新</span>        </p>      `;    })    .catch(e => {      document.getElementById('newsContainer').innerHTML = `        <div style="text-align:center; padding:20px;">          <div style="font-size:2em; margin-bottom:10px;">⚠️</div>          <p style="margin:0;">今日新闻加载失败，请刷新重试</p>          <p style="margin:10px 0 0; font-size:0.9em;">错误原因：${e.message}</p>        </div>      `;    });})();</script><style>  @keyframes spin { to { transform: rotate(360deg); } }  /* 确保不显示任何代码和默认列表样式 */  pre, code, script, style, ol, ul { display: none !important; }</style>]]></content>
       
       
       <categories>
@@ -17,6 +44,12 @@
           
       </categories>
       
+      
+        <tags>
+            
+            <tag> 每日国际大事件 </tag>
+            
+        </tags>
       
     </entry>
     
