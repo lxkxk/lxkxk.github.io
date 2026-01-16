@@ -1,0 +1,1352 @@
+<!DOCTYPE html><html lang="zh-CN" data-theme="light"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no"><title>✉·时光 | ✉·时光</title><meta name="keywords" content="博客,anzhiyu,Hexo,零碎記憶,记忆"><meta name="author" content="liuxk"><meta name="copyright" content="liuxk"><meta name="format-detection" content="telephone=no"><meta name="theme-color" content="#f7f9fe"><meta name="mobile-web-app-capable" content="yes"><meta name="apple-touch-fullscreen" content="yes"><meta name="apple-mobile-web-app-title" content="✉·时光"><meta name="application-name" content="✉·时光"><meta name="apple-mobile-web-app-capable" content="yes"><meta name="apple-mobile-web-app-status-bar-style" content="#f7f9fe"><meta property="og:type" content="website"><meta property="og:title" content="✉·时光"><meta property="og:url" content="http://www.liuxk.online/custom-pages/liziV2.html"><meta property="og:site_name" content="✉·时光"><meta property="og:description" content="3D 粒子手势交互系统 v2.1 - 双指旋钮操控版                        {             &amp;quot;imports&amp;quot;: {                 &amp;quot;three&amp;quot;: &amp;quot;https:&amp;#x2F;&amp;#x2F;cdn.jsdelivr.net&amp;#x2F;npm&amp;#x2F;t"><meta property="og:locale" content="zh-CN"><meta property="og:image" content="https://i.imgs.ovh/2025/08/02/JVHO0.jpeg?_r_=20c0cbe0-86e1-1678-f42a-40e52b185874"><meta property="article:author" content="liuxk"><meta property="article:tag" content="博客,anzhiyu,Hexo,零碎記憶,记忆"><meta name="twitter:card" content="summary"><meta name="twitter:image" content="https://i.imgs.ovh/2025/08/02/JVHO0.jpeg?_r_=20c0cbe0-86e1-1678-f42a-40e52b185874"><meta name="description" content="3D 粒子手势交互系统 v2.1 - 双指旋钮操控版                        {             &amp;quot;imports&amp;quot;: {                 &amp;quot;three&amp;quot;: &amp;quot;https:&amp;#x2F;&amp;#x2F;cdn.jsdelivr.net&amp;#x2F;npm&amp;#x2F;t"><link rel="shortcut icon" href="/favicon.ico"><link rel="canonical" href="http://www.liuxk.online/custom-pages/liziV2.html"><link rel="preconnect" href="//cdn.cbd.int"/><link rel="preconnect" href="//busuanzi.ibruce.info"/><meta name="google-site-verification" content="xxx"/><meta name="baidu-site-verification" content="code-xxx"/><meta name="msvalidate.01" content="xxx"/><link rel="stylesheet" href="/css/index.css"><link rel="stylesheet" href="https://cdn.cbd.int/node-snackbar@0.1.16/dist/snackbar.min.css" media="print" onload="this.media='all'"><link rel="stylesheet" href="https://cdn.cbd.int/@fancyapps/ui@5.0.28/dist/fancybox/fancybox.css" media="print" onload="this.media='all'"><link rel="stylesheet" href="/css/swiper.min.css" media="print" onload="this.media='all'"><script>const GLOBAL_CONFIG = {
+  linkPageTop: {"enable":true,"title":"与数百名博主无限进步","addFriendPlaceholder":"昵称（请勿包含博客等字样）：\n网站地址（要求博客地址，请勿提交个人主页）：\n头像图片url（请提供尽可能清晰的图片，我会上传到我自己的图床）：\n描述：\n站点截图（可选）：\n"},
+  peoplecanvas: undefined,
+  postHeadAiDescription: {"enable":true,"gptName":"AnZhiYu","mode":"local","switchBtn":false,"btnLink":"https://afdian.net/item/886a79d4db6711eda42a52540025c377","randomNum":3,"basicWordCount":1000,"key":"xxxx","Referer":"https://xx.xx/"},
+  diytitle: {"enable":true,"leaveTitle":"w(ﾟДﾟ)w 不要走！再看看嘛！","backTitle":"♪(^∇^*)欢迎肥来！"},
+  LA51: undefined,
+  greetingBox: {"enable":true,"default":"晚上好👋","list":[{"greeting":"晚安😴","startTime":0,"endTime":5},{"greeting":"早上好鸭👋, 祝你一天好心情！","startTime":6,"endTime":9},{"greeting":"上午好👋, 状态很好，鼓励一下～","startTime":10,"endTime":10},{"greeting":"11点多啦, 在坚持一下就吃饭啦～","startTime":11,"endTime":11},{"greeting":"午安👋, 宝贝","startTime":12,"endTime":14},{"greeting":"🌈充实的一天辛苦啦！","startTime":14,"endTime":17},{"greeting":"下班喽，奖励一顿丰盛的大餐吧🍔。","startTime":18,"endTime":19},{"greeting":"晚上好👋, 在属于自己的时间好好放松😌~","startTime":20,"endTime":24}]},
+  twikooEnvId: 'https://xktwikoo.liuxk.online',
+  commentBarrageConfig:{"enable":true,"maxBarrage":1,"barrageTime":4000,"accessToken":"","mailMd5":""},
+  music_page_default: "nav_music",
+  root: '/',
+  preloader: {"source":3},
+  friends_vue_info: undefined,
+  navMusic: true,
+  mainTone: undefined,
+  authorStatus: {"skills":["🤖️ 数码科技爱好者","🔍 分享与热心帮助","🏠 智能家居小能手","🔨 设计开发一条龙","🤝 专修交互与设计","🏃 脚踏实地行动派","🧱 团队小组发动机","💢 壮汉人狠话不多"]},
+  algolia: undefined,
+  localSearch: {"path":"/search.xml","preload":true,"languages":{"hits_empty":"找不到您查询的内容：${query}"}},
+  translate: {"defaultEncoding":2,"translateDelay":0,"msgToTraditionalChinese":"繁","msgToSimplifiedChinese":"简","rightMenuMsgToTraditionalChinese":"转为繁体","rightMenuMsgToSimplifiedChinese":"转为简体"},
+  noticeOutdate: undefined,
+  highlight: {"plugin":"highlight.js","highlightCopy":true,"highlightLang":true,"highlightHeightLimit":330},
+  copy: {
+    success: '复制成功',
+    error: '复制错误',
+    noSupport: '浏览器不支持'
+  },
+  relativeDate: {
+    homepage: false,
+    simplehomepage: true,
+    post: false
+  },
+  runtime: '天',
+  date_suffix: {
+    just: '刚刚',
+    min: '分钟前',
+    hour: '小时前',
+    day: '天前',
+    month: '个月前'
+  },
+  copyright: {"copy":true,"copyrightEbable":false,"limitCount":50,"languages":{"author":"作者: liuxk","link":"链接: ","source":"来源: ✉·时光","info":"著作权归作者所有。商业转载请联系作者获得授权，非商业转载请注明出处。","copySuccess":"复制成功，复制和转载请标注本文地址"}},
+  lightbox: 'fancybox',
+  Snackbar: {"chs_to_cht":"你已切换为繁体","cht_to_chs":"你已切换为简体","day_to_night":"你已切换为深色模式","night_to_day":"你已切换为浅色模式","bgLight":"#425AEF","bgDark":"#1f1f1f","position":"top-center"},
+  source: {
+    justifiedGallery: {
+      js: 'https://cdn.cbd.int/flickr-justified-gallery@2.1.2/dist/fjGallery.min.js',
+      css: 'https://cdn.cbd.int/flickr-justified-gallery@2.1.2/dist/fjGallery.css'
+    }
+  },
+  isPhotoFigcaption: false,
+  islazyload: true,
+  isAnchor: false,
+  shortcutKey: undefined,
+  autoDarkmode: true
+}</script><script id="config-diff">var GLOBAL_CONFIG_SITE = {
+  configTitle: '✉·时光',
+  title: '✉·时光',
+  postAI: '',
+  pageFillDescription: '粒子 · 幻境 v2.1粒子手势交互系统双指旋钮操控版粒子幻境五指张合能量爆发缩放食指滑动视角旋转锁定缩放双指旋转平面翻转旋钮操控星云球机械心土星环能量莲黑洞旋转交互变量新增双指旋钮交互变量缩放交互变量模式锁定与信号防抖模式应用信号防抖核心逻辑检测到手手势识别逻辑核心优化手势判定宽松化只要指尖离手腕足够远就认为是伸直的系数比较宽松确保稍微弯一点也算伸直无名指和小指用于判定是否为模式只要它们有一个是明显伸直的就认为不是双指模式优先级逻辑优化如果无名指或小指是伸直的最优先防止五指张开时误判如果只有食指和中指伸直双指画圈如果只有食指伸直单指旋转其他情况握拳等握拳也是收缩减少切换阈值让反应更快帧约平面旋转绝对角度跟手版低通滤波平滑度兼顾响应和稳定初始化角度计算当前角度处理到的跳变修正系数负号修正镜像放大手感混合输入速度和当前惯性让它既跟手又有重量缩放模式未检测到手',
+  isPost: false,
+  isHome: false,
+  isHighlightShrink: false,
+  isToc: false,
+  postUpdate: '2026-01-15 13:58:58',
+  postMainColor: '',
+}</script><noscript><style type="text/css">
+  #nav {
+    opacity: 1
+  }
+  .justified-gallery img {
+    opacity: 1
+  }
+
+  #recent-posts time,
+  #post-meta time {
+    display: inline !important
+  }
+</style></noscript><script>(win=>{
+      win.saveToLocal = {
+        set: (key, value, ttl) => {
+          if (ttl === 0) return
+          const now = Date.now()
+          const expiry = now + ttl * 86400000
+          const item = {
+            value,
+            expiry
+          }
+          localStorage.setItem(key, JSON.stringify(item))
+        },
+      
+        get: key => {
+          const itemStr = localStorage.getItem(key)
+      
+          if (!itemStr) {
+            return undefined
+          }
+          const item = JSON.parse(itemStr)
+          const now = Date.now()
+      
+          if (now > item.expiry) {
+            localStorage.removeItem(key)
+            return undefined
+          }
+          return item.value
+        }
+      }
+    
+      win.getScript = (url, attr = {}) => new Promise((resolve, reject) => {
+        const script = document.createElement('script')
+        script.src = url
+        script.async = true
+        script.onerror = reject
+        script.onload = script.onreadystatechange = function() {
+          const loadState = this.readyState
+          if (loadState && loadState !== 'loaded' && loadState !== 'complete') return
+          script.onload = script.onreadystatechange = null
+          resolve()
+        }
+
+        Object.keys(attr).forEach(key => {
+          script.setAttribute(key, attr[key])
+        })
+
+        document.head.appendChild(script)
+      })
+    
+      win.getCSS = (url, id = false) => new Promise((resolve, reject) => {
+        const link = document.createElement('link')
+        link.rel = 'stylesheet'
+        link.href = url
+        if (id) link.id = id
+        link.onerror = reject
+        link.onload = link.onreadystatechange = function() {
+          const loadState = this.readyState
+          if (loadState && loadState !== 'loaded' && loadState !== 'complete') return
+          link.onload = link.onreadystatechange = null
+          resolve()
+        }
+        document.head.appendChild(link)
+      })
+    
+      win.activateDarkMode = () => {
+        document.documentElement.setAttribute('data-theme', 'dark')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#18171d')
+        }
+      }
+      win.activateLightMode = () => {
+        document.documentElement.setAttribute('data-theme', 'light')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#f7f9fe')
+        }
+      }
+      const t = saveToLocal.get('theme')
+    
+          const isDarkMode = window.matchMedia('(prefers-color-scheme: dark)').matches
+          const isLightMode = window.matchMedia('(prefers-color-scheme: light)').matches
+          const isNotSpecified = window.matchMedia('(prefers-color-scheme: no-preference)').matches
+          const hasNoSupport = !isDarkMode && !isLightMode && !isNotSpecified
+
+          if (t === undefined) {
+            if (isLightMode) activateLightMode()
+            else if (isDarkMode) activateDarkMode()
+            else if (isNotSpecified || hasNoSupport) {
+              const now = new Date()
+              const hour = now.getHours()
+              const isNight = hour <= 6 || hour >= 18
+              isNight ? activateDarkMode() : activateLightMode()
+            }
+            window.matchMedia('(prefers-color-scheme: dark)').addListener(e => {
+              if (saveToLocal.get('theme') === undefined) {
+                e.matches ? activateDarkMode() : activateLightMode()
+              }
+            })
+          } else if (t === 'light') activateLightMode()
+          else activateDarkMode()
+        
+      const asideStatus = saveToLocal.get('aside-status')
+      if (asideStatus !== undefined) {
+        if (asideStatus === 'hide') {
+          document.documentElement.classList.add('hide-aside')
+        } else {
+          document.documentElement.classList.remove('hide-aside')
+        }
+      }
+    
+      const detectApple = () => {
+        if(/iPad|iPhone|iPod|Macintosh/.test(navigator.userAgent)){
+          document.documentElement.classList.add('apple')
+        }
+      }
+      detectApple()
+    })(window)</script><link rel="stylesheet" href="/css/home.css"><link rel="stylesheet" href="/static/essay-style.css"><meta name="generator" content="Hexo 7.3.0"></head><body data-type="anzhiyu"><div id="web_bg"></div><div id="an_music_bg"></div><div id="loading-box" onclick="document.getElementById(&quot;loading-box&quot;).classList.add(&quot;loaded&quot;)"><div class="loading-bg"><img class="loading-img nolazyload" alt="加载头像" src="https://i.imgs.ovh/2025/08/02/JVpsr.jpeg"/><div class="loading-image-dot"></div></div></div><script>const preloader = {
+  endLoading: () => {
+    document.getElementById('loading-box').classList.add("loaded");
+  },
+  initLoading: () => {
+    document.getElementById('loading-box').classList.remove("loaded")
+  }
+}
+window.addEventListener('load',()=> { preloader.endLoading() })
+setTimeout(function(){preloader.endLoading();},10000)
+
+if (true) {
+  document.addEventListener('pjax:send', () => { preloader.initLoading() })
+  document.addEventListener('pjax:complete', () => { preloader.endLoading() })
+}</script><link rel="stylesheet" href="https://cdn.cbd.int/anzhiyu-theme-static@1.1.10/progress_bar/progress_bar.css"/><script async="async" src="https://cdn.cbd.int/pace-js@1.2.4/pace.min.js" data-pace-options="{ &quot;restartOnRequestAfter&quot;:false,&quot;eventLag&quot;:false}"></script><div class="page" id="body-wrap"><header class="not-top-img" id="page-header"><nav id="nav"><div id="nav-group"><span id="blog_name"><div class="back-home-button"><i class="anzhiyufont anzhiyu-icon-grip-vertical"></i><div class="back-menu-list-groups"><div class="back-menu-list-group"><div class="back-menu-list-title">网页</div><div class="back-menu-list"><a class="back-menu-item" href="https://www.liuxk.online/" title="博客"><img class="back-menu-item-icon" src="/img/favicon.ico" alt="博客"/><span class="back-menu-item-text">博客</span></a></div></div><div class="back-menu-list-group"><div class="back-menu-list-title">推荐壁纸</div><div class="back-menu-list"><a class="back-menu-item" target="_blank" rel="noopener" href="https://haowallpaper.com/" title="哲风壁纸"><img class="back-menu-item-icon" src="https://image.anheyu.com/favicon.ico" alt="哲风壁纸"/><span class="back-menu-item-text">哲风壁纸</span></a></div></div></div></div><a id="site-name" href="/" accesskey="h"><div class="title">✉·时光</div><i class="anzhiyufont anzhiyu-icon-house-chimney"></i></a></span><div class="mask-name-container"><div id="name-container"><a id="page-name" href="javascript:anzhiyu.scrollToDest(0, 500)">PAGE_NAME</a></div></div><div id="menus"><div class="menus_items"><div class="menus_item"><a class="site-page" href="javascript:void(0);"><span> 文章</span></a><ul class="menus_item_child"><li><a class="site-page child faa-parent animated-hover" href="/archives/"><i class="anzhiyufont anzhiyu-icon-box-archive faa-tada" style="font-size: 0.9em;"></i><span> 隧道</span></a></li><li><a class="site-page child faa-parent animated-hover" href="/categories/"><i class="anzhiyufont anzhiyu-icon-shapes faa-tada" style="font-size: 0.9em;"></i><span> 分类</span></a></li><li><a class="site-page child faa-parent animated-hover" href="/tags/"><i class="anzhiyufont anzhiyu-icon-tags faa-tada" style="font-size: 0.9em;"></i><span> 标签</span></a></li></ul></div><div class="menus_item"><a class="site-page" href="javascript:void(0);"><span> 网站</span></a><ul class="menus_item_child"><li><a class="site-page child faa-parent animated-hover" href="/link/"><i class="anzhiyufont anzhiyu-icon-link faa-tada" style="font-size: 0.9em;"></i><span> 友人帐</span></a></li><li><a class="site-page child faa-parent animated-hover" href="/update/"><i class="anzhiyufont anzhiyu-icon-book faa-tada" style="font-size: 0.9em;"></i><span> 时间线</span></a></li><li><a class="site-page child faa-parent animated-hover" href="/fcircle/"><i class="anzhiyufont anzhiyu-icon-artstation faa-tada" style="font-size: 0.9em;"></i><span> 朋友圈</span></a></li><li><a class="site-page child faa-parent animated-hover" href="/story/"><i class="anzhiyufont anzhiyu-icon-envelope faa-tada" style="font-size: 0.9em;"></i><span> 故事</span></a></li><li><a class="site-page child faa-parent animated-hover" href="/comments/"><i class="anzhiyufont anzhiyu-icon-envelope faa-tada" style="font-size: 0.9em;"></i><span> 留言板</span></a></li></ul></div><div class="menus_item"><a class="site-page" href="javascript:void(0);"><span> 我的</span></a><ul class="menus_item_child"><li><a class="site-page child faa-parent animated-hover" href="/music/"><i class="anzhiyufont anzhiyu-icon-music faa-tada" style="font-size: 0.9em;"></i><span> 音乐馆</span></a></li><li><a class="site-page child faa-parent animated-hover" href="/album/"><i class="anzhiyufont anzhiyu-icon-images faa-tada" style="font-size: 0.9em;"></i><span> 相册集</span></a></li><li><a class="site-page child faa-parent animated-hover" href="/air-conditioner/"><i class="anzhiyufont anzhiyu-icon-fan faa-tada" style="font-size: 0.9em;"></i><span> 小空调</span></a></li></ul></div><div class="menus_item"><a class="site-page" href="javascript:void(0);"><span> 关于</span></a><ul class="menus_item_child"><li><a class="site-page child faa-parent animated-hover" href="/about/"><i class="anzhiyufont anzhiyu-icon-paper-plane faa-tada" style="font-size: 0.9em;"></i><span> 关于本人</span></a></li><li><a class="site-page child faa-parent animated-hover" href="/essay/"><i class="anzhiyufont anzhiyu-icon-lightbulb faa-tada" style="font-size: 0.9em;"></i><span> 即刻</span></a></li><li><a class="site-page child faa-parent animated-hover" href="javascript:toRandomPost()"><i class="anzhiyufont anzhiyu-icon-shoe-prints1 faa-tada" style="font-size: 0.9em;"></i><span> 随便逛逛</span></a></li></ul></div></div></div><div id="nav-right"><div class="nav-button" id="randomPost_button"><a class="site-page" onclick="toRandomPost()" title="随机前往一个文章" href="javascript:void(0);"><i class="anzhiyufont anzhiyu-icon-dice"></i></a></div><div class="nav-button" id="search-button"><a class="site-page social-icon search" href="javascript:void(0);" title="搜索🔍" accesskey="s"><i class="anzhiyufont anzhiyu-icon-magnifying-glass"></i><span> 搜索</span></a></div><input id="center-console" type="checkbox"/><label class="widget" for="center-console" title="中控台" onclick="anzhiyu.switchConsole();"><i class="left"></i><i class="widget center"></i><i class="widget right"></i></label><div id="console"><div class="console-card-group-reward"><ul class="reward-all console-card"><li class="reward-item"><a href="/img/wxzf.jpg" target="_blank"><img class="post-qr-code-img" alt="微信" src="/img/wxzf.jpg"/></a><div class="post-qr-code-desc">微信</div></li><li class="reward-item"><a href="/img/zfbzf.jpg" target="_blank"><img class="post-qr-code-img" alt="支付宝" src="/img/zfbzf.jpg"/></a><div class="post-qr-code-desc">支付宝</div></li></ul></div><div class="console-card-group"><div class="console-card-group-left"><div class="console-card" id="card-newest-comments"><div class="card-content"><div class="author-content-item-tips">互动</div><span class="author-content-item-title"> 最新评论</span></div><div class="aside-list"><span>正在加载中...</span></div></div></div><div class="console-card-group-right"><div class="console-card tags"><div class="card-content"><div class="author-content-item-tips">兴趣点</div><span class="author-content-item-title">寻找你感兴趣的领域</span><div class="card-tags"><div class="item-headline"></div><div class="card-tag-cloud"><a href="/tags/3D%E6%89%8B%E5%8A%BF%E7%B2%92%E5%AD%90%E5%9B%BE%E5%BD%A2/" style="font-size: 1.05rem;">3D手势粒子图形<sup>1</sup></a><a href="/tags/MBTI/" style="font-size: 1.05rem;">MBTI<sup>1</sup></a><a href="/tags/Markdown/" style="font-size: 1.05rem;">Markdown<sup>1</sup></a><a href="/tags/js%E5%90%8C%E6%AD%A5%E4%B8%8E%E5%BC%82%E6%AD%A5%E4%BB%BB%E5%8A%A1/" style="font-size: 1.05rem;">js同步与异步任务<sup>1</sup></a><a href="/tags/this%E7%94%A8%E6%B3%95/" style="font-size: 1.05rem;">this用法<sup>1</sup></a><a href="/tags/%E4%BA%BA%E6%A0%BC%E6%B5%8B%E8%AF%95/" style="font-size: 1.05rem;">人格测试<sup>1</sup></a><a href="/tags/%E5%A4%96%E6%8C%82%E6%A0%87%E7%AD%BE/" style="font-size: 1.05rem;">外挂标签<sup>1</sup></a><a href="/tags/%E6%AF%8F%E6%97%A5%E5%9B%BD%E9%99%85%E6%96%B0%E9%97%BB/" style="font-size: 1.05rem;">每日国际新闻<sup>1</sup></a><a href="/tags/%E7%94%B5%E8%84%91%E5%BF%85%E8%A3%85%E8%BD%AF%E4%BB%B6/" style="font-size: 1.05rem;">电脑必装软件<sup>1</sup></a><a href="/tags/%E8%B6%85%E6%B8%85%E5%A3%81%E7%BA%B8/" style="font-size: 1.05rem;">超清壁纸<sup>1</sup></a><a href="/tags/%E9%9A%BE%E9%A2%98%E4%B9%8B%E4%BB%8A%E6%99%9A%E5%90%83%E4%BB%80%E4%B9%88/" style="font-size: 1.05rem;">难题之今晚吃什么<sup>1</sup></a><a href="/tags/%E9%A3%9F%E8%B0%B1/" style="font-size: 1.05rem;">食谱<sup>1</sup></a></div></div><hr/></div></div><div class="console-card history"><div class="item-headline"><i class="anzhiyufont anzhiyu-icon-box-archiv"></i><span>文章</span></div><div class="card-archives"><div class="item-headline"><i class="anzhiyufont anzhiyu-icon-archive"></i><span>归档</span></div><ul class="card-archive-list"><li class="card-archive-list-item"><a class="card-archive-list-link" href="/archives/2026/01/"><span class="card-archive-list-date">一月 2026</span><div class="card-archive-list-count-group"><span class="card-archive-list-count">3</span><span>篇</span></div></a></li><li class="card-archive-list-item"><a class="card-archive-list-link" href="/archives/2025/09/"><span class="card-archive-list-date">九月 2025</span><div class="card-archive-list-count-group"><span class="card-archive-list-count">1</span><span>篇</span></div></a></li><li class="card-archive-list-item"><a class="card-archive-list-link" href="/archives/2025/07/"><span class="card-archive-list-date">七月 2025</span><div class="card-archive-list-count-group"><span class="card-archive-list-count">5</span><span>篇</span></div></a></li><li class="card-archive-list-item"><a class="card-archive-list-link" href="/archives/2025/06/"><span class="card-archive-list-date">六月 2025</span><div class="card-archive-list-count-group"><span class="card-archive-list-count">1</span><span>篇</span></div></a></li></ul></div><hr/></div></div></div><div class="button-group"><div class="console-btn-item"><a class="darkmode_switchbutton" title="显示模式切换" href="javascript:void(0);"><i class="anzhiyufont anzhiyu-icon-moon"></i></a></div><div class="console-btn-item" id="consoleHideAside" onclick="anzhiyu.hideAsideBtn()" title="边栏显示控制"><a class="asideSwitch"><i class="anzhiyufont anzhiyu-icon-arrows-left-right"></i></a></div><div class="console-btn-item on" id="consoleCommentBarrage" onclick="anzhiyu.switchCommentBarrage()" title="热评开关"><a class="commentBarrage"><i class="anzhiyufont anzhiyu-icon-message"></i></a></div><div class="console-btn-item" id="consoleMusic" onclick="anzhiyu.musicToggle()" title="音乐开关"><a class="music-switch"><i class="anzhiyufont anzhiyu-icon-music"></i></a></div></div><div class="console-mask" onclick="anzhiyu.hideConsole()" href="javascript:void(0);"></div></div><div class="nav-button" id="nav-totop"><a class="totopbtn" href="javascript:void(0);"><i class="anzhiyufont anzhiyu-icon-arrow-up"></i><span id="percent" onclick="anzhiyu.scrollToDest(0,500)">0</span></a></div><div id="toggle-menu"><a class="site-page" href="javascript:void(0);" title="切换"><i class="anzhiyufont anzhiyu-icon-bars"></i></a></div></div></div></nav></header><main id="blog-container"><div class="layout" id="content-inner"><div id="page"><h1 class="page-title"></h1><div id="article-container"><!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>3D 粒子手势交互系统 v2.1 - 双指旋钮操控版</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script async src="https://unpkg.com/es-module-shims@1.6.3/dist/es-module-shims.js"></script>
+    <script type="importmap">
+        {
+            "imports": {
+                "three": "https://cdn.jsdelivr.net/npm/three@0.154.0/build/three.module.js",
+                "three/addons/": "https://cdn.jsdelivr.net/npm/three@0.154.0/examples/jsm/"
+            }
+        }
+    </script>
+    <!-- MediaPipe Hands -->
+    <script src="https://cdn.jsdelivr.net/npm/@mediapipe/camera_utils/camera_utils.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@mediapipe/control_utils/control_utils.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@mediapipe/drawing_utils/drawing_utils.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@mediapipe/hands/hands.js" crossorigin="anonymous"></script>
+
+    <style>
+        body { margin: 0; overflow: hidden; background-color: #020205; font-family: 'Segoe UI', sans-serif; }
+        #canvas-container { position: absolute; top: 0; left: 0; width: 100%; height: 100%; z-index: 1; }
+        #video-element { display: none; }
+        
+        .glass-panel {
+            background: rgba(10, 10, 20, 0.7);
+            backdrop-filter: blur(16px);
+            -webkit-backdrop-filter: blur(16px);
+            border: 1px solid rgba(255, 255, 255, 0.08);
+            border-radius: 20px;
+            box-shadow: 0 8px 32px rgba(0, 0, 0, 0.6);
+        }
+
+        .control-btn {
+            transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+            position: relative;
+            overflow: hidden;
+        }
+        .control-btn:hover {
+            background: rgba(255, 255, 255, 0.15);
+            transform: translateY(-2px);
+            box-shadow: 0 0 20px rgba(255, 255, 255, 0.1);
+        }
+        .control-btn.active {
+            background: linear-gradient(135deg, rgba(100, 200, 255, 0.4), rgba(100, 200, 255, 0.1));
+            border: 1px solid rgba(100, 200, 255, 0.5);
+            box-shadow: 0 0 25px rgba(79, 209, 197, 0.3);
+            text-shadow: 0 0 8px rgba(255,255,255,0.8);
+        }
+
+        .loader {
+            border: 3px solid rgba(255, 255, 255, 0.1);
+            border-left-color: #00ffff;
+            border-radius: 50%;
+            width: 50px;
+            height: 50px;
+            animation: spin 0.8s cubic-bezier(0.5, 0.1, 0.5, 0.9) infinite;
+        }
+        @keyframes spin { 0% { transform: rotate(0deg); } 100% { transform: rotate(360deg); } }
+
+        .custom-scroll::-webkit-scrollbar { height: 4px; }
+        .custom-scroll::-webkit-scrollbar-track { background: rgba(0,0,0,0.2); border-radius: 4px; }
+        .custom-scroll::-webkit-scrollbar-thumb { background: rgba(255,255,255,0.15); border-radius: 4px; }
+        .custom-scroll::-webkit-scrollbar-thumb:hover { background: rgba(255,255,255,0.3); }
+        
+        .mode-item { transition: all 0.2s ease; opacity: 0.4; transform: scale(0.95); font-weight: normal; }
+        .mode-item.active { opacity: 1; transform: scale(1.0); color: #22d3ee; font-weight: bold; text-shadow: 0 0 10px rgba(34, 211, 238, 0.4); }
+    </style>
+</head>
+<body>
+
+    <div id="canvas-container"></div>
+    <video id="video-element" playsinline></video>
+
+    <!-- Loading -->
+    <div id="loader-overlay" class="fixed inset-0 z-50 flex flex-col items-center justify-center bg-black bg-opacity-95 transition-opacity duration-700">
+        <div class="loader mb-6 shadow-[0_0_30px_rgba(0,255,255,0.3)]"></div>
+        <div class="text-transparent bg-clip-text bg-gradient-to-r from-cyan-300 to-blue-500 text-2xl font-bold tracking-widest uppercase">Visual Core</div>
+        <div class="text-gray-500 text-xs mt-3 tracking-widest">INITIALIZING PARTICLE ENGINE v2.1</div>
+    </div>
+
+    <!-- UI -->
+    <div class="absolute top-0 left-0 w-full h-full pointer-events-none z-10 p-4 md:p-8 flex flex-col justify-between">
+        <div class="flex justify-between items-start pointer-events-auto">
+            <div class="glass-panel p-5 animate-fade-in-down transform transition-all hover:scale-105 duration-500">
+                <h1 class="text-white text-2xl font-bold tracking-tight mb-2 drop-shadow-[0_0_10px_rgba(255,255,255,0.3)]">粒子 · 幻境 <span class="text-xs text-cyan-400 align-top">v2.1</span></h1>
+                <div class="flex items-center gap-3 bg-black/30 rounded-full px-3 py-1 w-fit border border-white/5">
+                    <div id="status-dot" class="w-2 h-2 rounded-full bg-red-500 transition-all duration-500 shadow-[0_0_10px_red]"></div>
+                    <span id="status-text" class="text-[10px] text-gray-300 font-mono uppercase tracking-wider">System Offline</span>
+                </div>
+                <div class="text-[10px] text-gray-400 mt-3 font-mono border-t border-white/10 pt-2 flex flex-col gap-1">
+                    <div id="mode-scale" class="mode-item">👋 五指张合: 能量爆发 (缩放)</div>
+                    <div id="mode-rotate" class="mode-item">☝️ 食指滑动: 视角旋转 (锁定缩放)</div>
+                    <div id="mode-roll" class="mode-item">✌️ 双指旋转: 平面翻转 (旋钮操控)</div>
+                </div>
+            </div>
+            
+            <button onclick="toggleFullScreen()" class="glass-panel p-4 text-white hover:text-cyan-300 control-btn rounded-full group">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 group-hover:scale-110 transition-transform" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 8V4m0 0h4M4 4l5 5m11-1V4m0 0h-4m4 0l-5 5M4 16v4m0 0h4m-4 0l5-5m11 5l-5-5m5 5v-4m0 4h-4" />
+                </svg>
+            </button>
+        </div>
+
+        <div class="pointer-events-auto flex flex-col md:flex-row gap-6 items-end md:items-center justify-between w-full">
+            <div class="glass-panel p-2 flex gap-2 overflow-x-auto max-w-full custom-scroll">
+                <button onclick="changeShape('sphere')" class="control-btn active px-6 py-3 rounded-xl text-sm text-white font-semibold whitespace-nowrap tracking-wide" data-shape="sphere">星云球</button>
+                <button onclick="changeShape('heart')" class="control-btn px-6 py-3 rounded-xl text-sm text-white font-semibold whitespace-nowrap tracking-wide" data-shape="heart">机械心</button>
+                <button onclick="changeShape('saturn')" class="control-btn px-6 py-3 rounded-xl text-sm text-white font-semibold whitespace-nowrap tracking-wide" data-shape="saturn">土星环</button>
+                <button onclick="changeShape('lotus')" class="control-btn px-6 py-3 rounded-xl text-sm text-white font-semibold whitespace-nowrap tracking-wide" data-shape="lotus">能量莲</button>
+                <button onclick="changeShape('galaxy')" class="control-btn px-6 py-3 rounded-xl text-sm text-white font-semibold whitespace-nowrap tracking-wide" data-shape="galaxy">黑洞</button>
+            </div>
+
+            <div class="glass-panel p-4 flex items-center gap-4 hover:bg-white/10 transition-colors">
+                <span class="text-white text-xs font-mono tracking-wider uppercase opacity-70">Emission Color</span>
+                <div class="relative w-8 h-8 rounded-full overflow-hidden ring-2 ring-white/20 hover:ring-cyan-400 transition-all">
+                    <input type="color" id="color-picker" value="#00ffff" class="absolute -top-1/2 -left-1/2 w-[200%] h-[200%] cursor-pointer p-0 m-0 border-0" onchange="updateColor(this.value)">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script type="module">
+        import * as THREE from 'three';
+        import { OrbitControls } from 'three/addons/controls/OrbitControls.js';
+        import { EffectComposer } from 'three/addons/postprocessing/EffectComposer.js';
+        import { RenderPass } from 'three/addons/postprocessing/RenderPass.js';
+        import { UnrealBloomPass } from 'three/addons/postprocessing/UnrealBloomPass.js';
+
+        // --- Configuration ---
+        const PARTICLE_COUNT = 45000; 
+        const PARTICLE_SIZE = 0.18;
+        const SATURN_BODY_RATIO = 0.3; 
+        
+        // State
+        let scene, camera, renderer, composer, particles, controls;
+        let targetPositions = []; 
+        let targetColors = []; 
+        let currentShape = 'sphere';
+        let handInfluence = 0; 
+        let isHandDetected = false;
+        let clock = new THREE.Clock();
+
+        // Color State
+        let userBaseColor = new THREE.Color(0x00ffff); 
+
+        // 旋转交互变量
+        let previousFingerPos = { x: 0, y: 0 };
+        let smoothedFingerPos = { x: 0, y: 0 }; 
+        let rotationVelocity = { x: 0, y: 0, z: 0 }; 
+        let isTrackingRotation = false; 
+        
+        // 【新增】双指旋钮交互变量
+        let isTrackingRoll = false;
+        let smoothedIndexTip = { x: 0, y: 0 };
+        let smoothedMiddleTip = { x: 0, y: 0 };
+        let previousRollAngle = 0;
+
+        // 缩放交互变量
+        let currentGestureMode = 'none'; 
+        
+        // 模式锁定与信号防抖
+        let currentStableMode = 'scale'; 
+        let modeFrameCounter = 0; 
+        let lastTimeHandDetected = 0; 
+        
+        async function init() {
+            // 1. Scene & Camera
+            scene = new THREE.Scene();
+            scene.fog = new THREE.FogExp2(0x020205, 0.02);
+
+            camera = new THREE.PerspectiveCamera(60, window.innerWidth / window.innerHeight, 0.1, 1000);
+            camera.position.z = 30;
+            camera.position.y = 0;
+
+            // 2. Renderer
+            renderer = new THREE.WebGLRenderer({ antialias: false, alpha: true, powerPreference: "high-performance" });
+            renderer.setSize(window.innerWidth, window.innerHeight);
+            renderer.setPixelRatio(Math.min(window.devicePixelRatio, 1.5)); 
+            renderer.toneMapping = THREE.ReinhardToneMapping;
+            document.getElementById('canvas-container').appendChild(renderer.domElement);
+
+            // 3. Post Processing (BLOOM)
+            const renderScene = new RenderPass(scene, camera);
+            const bloomPass = new UnrealBloomPass(new THREE.Vector2(window.innerWidth, window.innerHeight), 1.5, 0.4, 0.85);
+            bloomPass.threshold = 0.05; 
+            bloomPass.strength = 1.4;   
+            bloomPass.radius = 0.6;     
+
+            composer = new EffectComposer(renderer);
+            composer.addPass(renderScene);
+            composer.addPass(bloomPass);
+
+            // 4. Controls
+            controls = new OrbitControls(camera, renderer.domElement);
+            controls.enableDamping = true;
+            controls.dampingFactor = 0.05;
+            controls.autoRotate = true;
+            controls.autoRotateSpeed = 0.5;
+            controls.enableZoom = true;
+
+            // 5. Build World
+            createParticles();
+            await setupMediaPipe();
+
+            window.addEventListener('resize', onWindowResize);
+            animate();
+        }
+
+        function createParticles() {
+            const geometry = new THREE.BufferGeometry();
+            const positions = new Float32Array(PARTICLE_COUNT * 3);
+            const colors = new Float32Array(PARTICLE_COUNT * 3);
+
+            const sphere = getShapePositions('sphere');
+            const initialColors = getShapeColors('sphere');
+            
+            for (let i = 0; i < PARTICLE_COUNT; i++) {
+                positions[i * 3] = sphere[i * 3];
+                positions[i * 3 + 1] = sphere[i * 3 + 1];
+                positions[i * 3 + 2] = sphere[i * 3 + 2];
+
+                colors[i * 3] = initialColors[i * 3];
+                colors[i * 3 + 1] = initialColors[i * 3 + 1];
+                colors[i * 3 + 2] = initialColors[i * 3 + 2];
+            }
+
+            geometry.setAttribute('position', new THREE.BufferAttribute(positions, 3));
+            geometry.setAttribute('color', new THREE.BufferAttribute(colors, 3));
+            
+            const sprite = createParticleTexture();
+
+            const material = new THREE.PointsMaterial({
+                size: PARTICLE_SIZE,
+                map: sprite,
+                color: userBaseColor, 
+                transparent: true,
+                opacity: 0.8,
+                blending: THREE.AdditiveBlending, 
+                depthWrite: false,
+                sizeAttenuation: true,
+                vertexColors: true
+            });
+
+            particles = new THREE.Points(geometry, material);
+            scene.add(particles);
+            
+            targetPositions = Float32Array.from(sphere);
+            targetColors = Float32Array.from(initialColors); 
+        }
+
+        function createParticleTexture() {
+            const canvas = document.createElement('canvas');
+            canvas.width = 32; canvas.height = 32;
+            const context = canvas.getContext('2d');
+            const gradient = context.createRadialGradient(16, 16, 0, 16, 16, 16);
+            gradient.addColorStop(0, 'rgba(255,255,255,1)');
+            gradient.addColorStop(0.4, 'rgba(255,255,255,0.5)');
+            gradient.addColorStop(1, 'rgba(0,0,0,0)');
+            context.fillStyle = gradient;
+            context.fillRect(0, 0, 32, 32);
+            return new THREE.CanvasTexture(canvas);
+        }
+
+        function getShapeColors(type) {
+            const cols = new Float32Array(PARTICLE_COUNT * 3);
+            
+            for (let i = 0; i < PARTICLE_COUNT; i++) {
+                let brightness = 0.2 + Math.random() * 0.8;
+                let r, g, b;
+
+                if (type === 'saturn') {
+                    if (i < PARTICLE_COUNT * SATURN_BODY_RATIO) {
+                        r = 1.0; g = 0.7; b = 0.3; 
+                    } else {
+                        r = 0.6; g = 0.8; b = 1.0; 
+                    }
+                    r *= brightness; g *= brightness; b *= brightness;
+                } else {
+                    r = brightness; g = brightness; b = brightness;
+                }
+
+                cols[i * 3] = r;
+                cols[i * 3 + 1] = g;
+                cols[i * 3 + 2] = b;
+            }
+            return cols;
+        }
+
+        function getShapePositions(type) {
+            const pos = new Float32Array(PARTICLE_COUNT * 3);
+            
+            for (let i = 0; i < PARTICLE_COUNT; i++) {
+                let x, y, z;
+                
+                if (type === 'sphere') {
+                    const r = 10 + Math.random() * 2; 
+                    const theta = Math.random() * Math.PI * 2;
+                    const phi = Math.acos(2 * Math.random() - 1);
+                    x = r * Math.sin(phi) * Math.cos(theta);
+                    y = r * Math.sin(phi) * Math.sin(theta);
+                    z = r * Math.cos(phi);
+                    if (i < PARTICLE_COUNT * 0.2) { x *= 0.3; y *= 0.3; z *= 0.3; }
+                } 
+                else if (type === 'heart') {
+                    const t = Math.PI - 2 * Math.PI * Math.random(); 
+                    const u = 2 * Math.PI * Math.random();
+                    x = 16 * Math.pow(Math.sin(t), 3);
+                    y = 13 * Math.cos(t) - 5 * Math.cos(2*t) - 2 * Math.cos(3*t) - Math.cos(4*t);
+                    z = 6 * Math.cos(t) * Math.sin(u) * Math.sin(t); 
+                    const scale = 0.6;
+                    x *= scale; y *= scale; z *= scale;
+                    if (Math.random() > 0.8) { x *= 1.1; y *= 1.1; z *= 1.1; }
+                } 
+                else if (type === 'saturn') {
+                    if (i < PARTICLE_COUNT * SATURN_BODY_RATIO) {
+                        const r = 5.5;
+                        const theta = Math.random() * Math.PI * 2;
+                        const phi = Math.acos(2 * Math.random() - 1);
+                        x = r * Math.sin(phi) * Math.cos(theta);
+                        y = r * 0.9 * Math.sin(phi) * Math.sin(theta); 
+                        z = r * Math.cos(phi);
+                    } else {
+                        const angle = Math.random() * Math.PI * 2;
+                        const ringSelector = Math.random();
+                        let r, thickness;
+                        if (ringSelector < 0.45) {
+                            r = 7 + Math.random() * 3.5; thickness = 0.2;
+                        } else if (ringSelector < 0.5) {
+                            r = 10.5 + Math.random() * 1.5; thickness = 0.1;
+                            if (Math.random() > 0.2) { x=0;y=0;z=0; pos[i*3]=x; pos[i*3+1]=y; pos[i*3+2]=z; continue; }
+                        } else {
+                            r = 12 + Math.random() * 5; thickness = 0.4;
+                        }
+                        r += (Math.random() - 0.5) * 0.3;
+                        x = r * Math.cos(angle);
+                        y = (Math.random() - 0.5) * thickness; 
+                        z = r * Math.sin(angle);
+                        const tilt = 0.4;
+                        const y_new = y * Math.cos(tilt) - x * Math.sin(tilt);
+                        const x_new = y * Math.sin(tilt) + x * Math.cos(tilt);
+                        x = x_new; y = y_new;
+                    }
+                }
+                else if (type === 'lotus') {
+                     const u = Math.random() * Math.PI * 2; 
+                     const v = Math.random(); 
+                     const petals = 7;
+                     const rBase = 8 * (0.5 + 0.5 * Math.pow(Math.sin(petals * u * 0.5), 2)) * v;
+                     x = rBase * Math.cos(u);
+                     z = rBase * Math.sin(u);
+                     y = 4 * Math.pow(v, 2) - 2;
+                     if (i < PARTICLE_COUNT * 0.15) { x = (Math.random()-0.5); z = (Math.random()-0.5); y = (Math.random()-0.5)*10; }
+                }
+                else if (type === 'galaxy') {
+                    const arms = 3; 
+                    const spin = i % arms;
+                    const angleOffset = (spin / arms) * Math.PI * 2;
+                    const dist = Math.pow(Math.random(), 0.5); 
+                    const r = dist * 20;
+                    const angle = dist * 10 + angleOffset;
+                    x = r * Math.cos(angle);
+                    z = r * Math.sin(angle);
+                    y = (Math.random() - 0.5) * (15 - r) * 0.2; 
+                    if (r < 2) y *= 0.2;
+                }
+
+                pos[i * 3] = x;
+                pos[i * 3 + 1] = y;
+                pos[i * 3 + 2] = z;
+            }
+            return pos;
+        }
+
+        function animate() {
+            requestAnimationFrame(animate);
+            
+            const time = clock.getElapsedTime();
+            
+            const positions = particles.geometry.attributes.position.array;
+            const colors = particles.geometry.attributes.color.array;
+            
+            let targetScaleBase = 1.0;
+            let targetParticleSize = PARTICLE_SIZE; 
+            let turbulence = 0.05;
+
+            // 【模式应用】
+            if (isHandDetected) {
+                targetScaleBase = 0.2 + (handInfluence * 2.3);
+                turbulence = 0.02 + (handInfluence * 0.3);
+                targetParticleSize = PARTICLE_SIZE * (0.8 + handInfluence * 2.5);
+            } else {
+                targetScaleBase = 1.0 + Math.sin(time * 1.5) * 0.05;
+                targetParticleSize = PARTICLE_SIZE * (1.0 + Math.sin(time * 1.5) * 0.15);
+            }
+
+            if (particles && particles.material) {
+                particles.material.size = THREE.MathUtils.lerp(particles.material.size, targetParticleSize, 0.1);
+                
+                const camRight = new THREE.Vector3(1, 0, 0).applyQuaternion(camera.quaternion).normalize();
+                const camUp = new THREE.Vector3(0, 1, 0).applyQuaternion(camera.quaternion).normalize();
+                const camForward = new THREE.Vector3(0, 0, -1).applyQuaternion(camera.quaternion).normalize();
+
+                particles.rotateOnWorldAxis(camUp, rotationVelocity.y);
+                particles.rotateOnWorldAxis(camRight, rotationVelocity.x);
+                particles.rotateOnWorldAxis(camForward, rotationVelocity.z);
+                
+                const MAX_SPEED = 0.06;
+                const MAX_ROLL_SPEED = 0.035;
+
+                rotationVelocity.x = THREE.MathUtils.clamp(rotationVelocity.x, -MAX_SPEED, MAX_SPEED);
+                rotationVelocity.y = THREE.MathUtils.clamp(rotationVelocity.y, -MAX_SPEED, MAX_SPEED);
+                rotationVelocity.z = THREE.MathUtils.clamp(rotationVelocity.z, -MAX_ROLL_SPEED, MAX_ROLL_SPEED);
+
+                rotationVelocity.x *= 0.92; 
+                rotationVelocity.y *= 0.92;
+                rotationVelocity.z *= 0.96; 
+            }
+
+            const lerpSpeed = 0.06;
+            const colorLerpSpeed = 0.03; 
+
+            for (let i = 0; i < PARTICLE_COUNT; i++) {
+                const idx = i * 3;
+                
+                let tx = targetPositions[idx];
+                let ty = targetPositions[idx+1];
+                let tz = targetPositions[idx+2];
+
+                const dist = Math.sqrt(tx * tx + ty * ty + tz * tz);
+                const normalizedDist = Math.min(dist / 20.0, 1.0);
+                
+                let distanceExpansionBoost = 1.0;
+                if (isHandDetected) {
+                    distanceExpansionBoost = 1.0 + (handInfluence * Math.pow(normalizedDist, 1.5) * 2.0);
+                }
+                
+                const finalScale = targetScaleBase * distanceExpansionBoost;
+                tx *= finalScale; ty *= finalScale; tz *= finalScale;
+
+                if (currentShape === 'galaxy') {
+                    const angle = time * (0.1 + (1.0 - (Math.sqrt(tx*tx+tz*tz)/20)) * 0.5); 
+                    const cos = Math.cos(angle); const sin = Math.sin(angle);
+                    const rx = tx * cos - tz * sin;
+                    const rz = tx * sin + tz * cos;
+                    tx = rx; tz = rz;
+                } else if (currentShape === 'lotus') {
+                     ty += Math.sin(time + tx) * 0.5;
+                } else {
+                    tx += Math.sin(time * 2 + i) * turbulence;
+                    ty += Math.cos(time * 3 + i) * turbulence;
+                    tz += Math.sin(time * 4 + i) * turbulence;
+                }
+
+                positions[idx] += (tx - positions[idx]) * lerpSpeed;
+                positions[idx+1] += (ty - positions[idx+1]) * lerpSpeed;
+                positions[idx+2] += (tz - positions[idx+2]) * lerpSpeed;
+                
+                if (targetColors.length > 0) {
+                    colors[idx] += (targetColors[idx] - colors[idx]) * colorLerpSpeed;
+                    colors[idx+1] += (targetColors[idx+1] - colors[idx+1]) * colorLerpSpeed;
+                    colors[idx+2] += (targetColors[idx+2] - colors[idx+2]) * colorLerpSpeed;
+                }
+
+                if (Math.random() > 0.9995) {
+                    colors[idx] = 2.0; colors[idx+1] = 2.0; colors[idx+2] = 2.0; 
+                }
+                if (colors[idx] > 1.5) {
+                    colors[idx] *= 0.9; colors[idx+1] *= 0.9; colors[idx+2] *= 0.9;
+                }
+            }
+
+            particles.geometry.attributes.position.needsUpdate = true;
+            particles.geometry.attributes.color.needsUpdate = true;
+
+            if (!isHandDetected) {
+                controls.autoRotate = true;
+                controls.autoRotateSpeed = 1.0;
+            } else {
+                controls.autoRotate = false;
+            }
+
+            controls.update();
+            composer.render();
+        }
+
+        async function setupMediaPipe() {
+            const videoElement = document.getElementById('video-element');
+            const statusDot = document.getElementById('status-dot');
+            const statusText = document.getElementById('status-text');
+            const modeScaleText = document.getElementById('mode-scale');
+            const modeRotateText = document.getElementById('mode-rotate');
+            const modeRollText = document.getElementById('mode-roll'); 
+
+            const hands = new Hands({locateFile: (file) => {
+                return `https://cdn.jsdelivr.net/npm/@mediapipe/hands/${file}`;
+            }});
+
+            hands.setOptions({
+                maxNumHands: 1,
+                modelComplexity: 1,
+                minDetectionConfidence: 0.5,
+                minTrackingConfidence: 0.5
+            });
+
+            hands.onResults((results) => {
+                const now = Date.now();
+
+                // 【信号防抖核心逻辑】
+                if (results.multiHandLandmarks && results.multiHandLandmarks.length > 0) {
+                    // --- 检测到手 ---
+                    isHandDetected = true;
+                    lastTimeHandDetected = now; 
+                    
+                    statusDot.className = "w-2 h-2 rounded-full bg-cyan-400 shadow-[0_0_15px_cyan]";
+                    statusText.innerText = "LINK ESTABLISHED";
+                    statusText.className = "text-[10px] text-cyan-300 font-mono uppercase tracking-wider font-bold";
+                    
+                    const landmarks = results.multiHandLandmarks[0];
+                    
+                    // ... [手势识别逻辑] ...
+                    const getDist = (i, j) => {
+                        return Math.sqrt(Math.pow(landmarks[i].x - landmarks[j].x, 2) + Math.pow(landmarks[i].y - landmarks[j].y, 2));
+                    };
+
+                    // 【核心优化：手势判定宽松化】
+                    // 只要指尖离手腕足够远，就认为是伸直的。
+                    // 系数 1.1 比较宽松，确保稍微弯一点也算伸直
+                    const isIndexOpen = getDist(8, 0) > getDist(6, 0) * 1.1;
+                    const isMiddleOpen = getDist(12, 0) > getDist(10, 0) * 1.1;
+                    
+                    // 无名指和小指：用于判定是否为 Scale 模式
+                    // 只要它们有一个是明显伸直的，就认为不是双指模式
+                    const isRingOpen = getDist(16, 0) > getDist(14, 0) * 1.1;
+                    const isPinkyOpen = getDist(20, 0) > getDist(18, 0) * 1.1;
+
+                    let detectedMode = 'scale';
+
+                    // 【优先级逻辑优化】
+                    // 1. 如果无名指或小指是伸直的 -> Scale (最优先，防止五指张开时误判)
+                    // 2. 如果只有食指和中指伸直 -> Roll (双指画圈)
+                    // 3. 如果只有食指伸直 -> Rotate (单指旋转)
+                    // 4. 其他情况 (握拳等) -> Scale
+                    
+                    if (isRingOpen || isPinkyOpen) {
+                        detectedMode = 'scale'; 
+                    } else if (isIndexOpen && isMiddleOpen) {
+                        detectedMode = 'roll'; 
+                    } else if (isIndexOpen && !isMiddleOpen) {
+                        detectedMode = 'rotate'; 
+                    } else {
+                        detectedMode = 'scale'; // 握拳也是 Scale (收缩)
+                    }
+
+                    if (detectedMode === currentStableMode) {
+                        modeFrameCounter = 0;
+                    } else {
+                        modeFrameCounter++;
+                        // 减少切换阈值，让反应更快 (4帧约 60ms)
+                        let switchThreshold = 4; 
+
+                        if (modeFrameCounter > switchThreshold) {
+                            currentStableMode = detectedMode;
+                            modeFrameCounter = 0;
+                            isTrackingRotation = false;
+                            isTrackingRoll = false;
+                            previousFingerPos = { x: 0, y: 0 }; 
+                        }
+                    }
+
+                    modeScaleText.classList.remove('active');
+                    modeRotateText.classList.remove('active');
+                    modeRollText.classList.remove('active');
+                    if (currentStableMode === 'roll') modeRollText.classList.add('active');
+                    else if (currentStableMode === 'rotate') modeRotateText.classList.add('active');
+                    else modeScaleText.classList.add('active');
+
+                    if (currentStableMode === 'roll') {
+                        // 【平面旋转 - 绝对角度跟手版】
+                        const rawIndex = landmarks[8];
+                        const rawMiddle = landmarks[12];
+
+                        // 1. 低通滤波 (平滑度 0.2, 兼顾响应和稳定)
+                        if (!isTrackingRoll) {
+                            smoothedIndexTip = { x: rawIndex.x, y: rawIndex.y };
+                            smoothedMiddleTip = { x: rawMiddle.x, y: rawMiddle.y };
+                            // 初始化角度
+                            const dx = rawIndex.x - rawMiddle.x;
+                            const dy = rawIndex.y - rawMiddle.y;
+                            previousRollAngle = Math.atan2(dy, dx);
+                            isTrackingRoll = true;
+                        } else {
+                            const lerpFactor = 0.2;
+                            smoothedIndexTip.x = THREE.MathUtils.lerp(smoothedIndexTip.x, rawIndex.x, lerpFactor);
+                            smoothedIndexTip.y = THREE.MathUtils.lerp(smoothedIndexTip.y, rawIndex.y, lerpFactor);
+                            smoothedMiddleTip.x = THREE.MathUtils.lerp(smoothedMiddleTip.x, rawMiddle.x, lerpFactor);
+                            smoothedMiddleTip.y = THREE.MathUtils.lerp(smoothedMiddleTip.y, rawMiddle.y, lerpFactor);
+                        }
+
+                        // 2. 计算当前角度 (Between fingers)
+                        const dx = smoothedIndexTip.x - smoothedMiddleTip.x;
+                        const dy = smoothedIndexTip.y - smoothedMiddleTip.y;
+                        const currentAngle = Math.atan2(dy, dx);
+
+                        let deltaAngle = currentAngle - previousRollAngle;
+
+                        // 处理 -PI 到 PI 的跳变
+                        if (deltaAngle > Math.PI) deltaAngle -= 2 * Math.PI;
+                        if (deltaAngle < -Math.PI) deltaAngle += 2 * Math.PI;
+
+                        // 修正系数：-1.5 (负号修正镜像，1.5放大手感)
+                        const inputVelocity = -deltaAngle * 1.5; 
+                        
+                        // 混合输入速度和当前惯性，让它既跟手又有重量
+                        rotationVelocity.z = THREE.MathUtils.lerp(rotationVelocity.z, inputVelocity, 0.3);
+                        
+                        previousRollAngle = currentAngle;
+                        isTrackingRotation = false;
+
+                    } else if (currentStableMode === 'rotate') {
+                        const rawFingerX = landmarks[8].x;
+                        const rawFingerY = landmarks[8].y;
+
+                        if (!isTrackingRotation) {
+                            smoothedFingerPos = { x: rawFingerX, y: rawFingerY };
+                            previousFingerPos = { x: rawFingerX, y: rawFingerY };
+                            isTrackingRotation = true;
+                        }
+
+                        const smoothingFactor = 0.2; 
+                        smoothedFingerPos.x = THREE.MathUtils.lerp(smoothedFingerPos.x, rawFingerX, smoothingFactor);
+                        smoothedFingerPos.y = THREE.MathUtils.lerp(smoothedFingerPos.y, rawFingerY, smoothingFactor);
+
+                        const deltaX = smoothedFingerPos.x - previousFingerPos.x;
+                        const deltaY = smoothedFingerPos.y - previousFingerPos.y;
+                        
+                        const MOVE_THRESHOLD = 0.005; 
+
+                        if (Math.abs(deltaX) > MOVE_THRESHOLD || Math.abs(deltaY) > MOVE_THRESHOLD) {
+                            const sensitivity = 3.5; 
+                            if (Math.abs(deltaX) > Math.abs(deltaY)) {
+                                const effectiveX = deltaX > 0 ? deltaX - MOVE_THRESHOLD : deltaX + MOVE_THRESHOLD;
+                                rotationVelocity.y -= effectiveX * sensitivity; 
+                            } else {
+                                const effectiveY = deltaY > 0 ? deltaY - MOVE_THRESHOLD : deltaY + MOVE_THRESHOLD;
+                                rotationVelocity.x += effectiveY * sensitivity;
+                            }
+                        }
+                        previousFingerPos = { x: smoothedFingerPos.x, y: smoothedFingerPos.y };
+                        isTrackingRoll = false;
+                        
+                    } else {
+                        // 【缩放模式】
+                        if (isTrackingRoll) { isTrackingRoll = false; }
+                        isTrackingRotation = false;
+
+                        const tips = [4, 8, 12, 16, 20];
+                        let totalDist = 0;
+                        tips.forEach(idx => {
+                            totalDist += getDist(idx, 0); 
+                        });
+                        
+                        const avgDist = totalDist / 5;
+                        let rawOpenness = (avgDist - 0.08) / (0.4 - 0.08);
+                        rawOpenness = Math.max(0, Math.min(1, rawOpenness));
+
+                        handInfluence = THREE.MathUtils.lerp(handInfluence, rawOpenness, 0.2);
+                    }
+
+                } else {
+                    // --- 未检测到手 ---
+                    if (now - lastTimeHandDetected < 800) {
+                        return; 
+                    }
+
+                    isHandDetected = false;
+                    isTrackingRotation = false;
+                    isTrackingRoll = false;
+                    modeFrameCounter = 0;
+                    currentStableMode = 'scale';
+
+                    statusDot.className = "w-2 h-2 rounded-full bg-red-500 shadow-[0_0_10px_red]";
+                    statusText.innerText = "SEARCHING SIGNAL...";
+                    statusText.className = "text-[10px] text-red-400 font-mono uppercase tracking-wider animate-pulse";
+                    
+                    handInfluence = THREE.MathUtils.lerp(handInfluence, 0.5, 0.02); 
+                    
+                    modeScaleText.classList.remove('active');
+                    modeRotateText.classList.remove('active');
+                    modeRollText.classList.remove('active');
+                }
+            });
+
+            const cameraUtils = new Camera(videoElement, {
+                onFrame: async () => { await hands.send({image: videoElement}); },
+                width: 640, height: 480
+            });
+
+            try {
+                await cameraUtils.start();
+                const loader = document.getElementById('loader-overlay');
+                loader.style.opacity = '0';
+                setTimeout(() => loader.remove(), 800);
+            } catch (err) {
+                console.error(err);
+                statusText.innerText = "CAMERA ERROR";
+            }
+        }
+
+        window.onWindowResize = () => {
+            camera.aspect = window.innerWidth / window.innerHeight;
+            camera.updateProjectionMatrix();
+            renderer.setSize(window.innerWidth, window.innerHeight);
+            composer.setSize(window.innerWidth, window.innerHeight);
+        };
+
+        window.changeShape = (shape) => {
+            currentShape = shape;
+            targetPositions = getShapePositions(shape);
+            targetColors = getShapeColors(shape);
+
+            if (shape === 'saturn') {
+                const white = new THREE.Color(0xffffff);
+                new TWEEN.Tween(particles.material.color)
+                    .to({ r: 1, g: 1, b: 1 }, 500)
+                    .start();
+            } else {
+                new TWEEN.Tween(particles.material.color)
+                    .to({ r: userBaseColor.r, g: userBaseColor.g, b: userBaseColor.b }, 500)
+                    .start();
+            }
+
+            document.querySelectorAll('[data-shape]').forEach(btn => {
+                btn.classList.remove('active');
+                if(btn.dataset.shape === shape) btn.classList.add('active');
+            });
+        };
+
+        window.updateColor = (hex) => {
+            const c = new THREE.Color(hex);
+            userBaseColor = c; 
+
+            if(particles) {
+                if (currentShape !== 'saturn') {
+                    const initial = particles.material.color.clone();
+                    let alpha = 0;
+                    const anim = () => {
+                        alpha += 0.05;
+                        particles.material.color.lerpColors(initial, c, alpha);
+                        if (alpha < 1) requestAnimationFrame(anim);
+                    };
+                    anim();
+                }
+            }
+        };
+
+        window.toggleFullScreen = () => {
+            if (!document.fullscreenElement) document.documentElement.requestFullscreen();
+            else if (document.exitFullscreen) document.exitFullscreen();
+        };
+
+        const TWEEN = {
+            Tween: function(obj) {
+                this.obj = obj;
+                this.target = {};
+                this.duration = 1000;
+                this.startTime = 0;
+                this.to = function(target, duration) { this.target = target; this.duration = duration; return this; };
+                this.start = function() { this.startTime = performance.now(); this.initial = { r: this.obj.r, g: this.obj.g, b: this.obj.b }; requestAnimationFrame(this.update.bind(this)); return this; };
+                this.update = function(time) {
+                    const elapsed = time - this.startTime;
+                    const progress = Math.min(elapsed / this.duration, 1);
+                    const ease = 1 - Math.pow(1 - progress, 3);
+                    this.obj.r = this.initial.r + (this.target.r - this.initial.r) * ease;
+                    this.obj.g = this.initial.g + (this.target.g - this.initial.g) * ease;
+                    this.obj.b = this.initial.b + (this.target.b - this.initial.b) * ease;
+                    if (progress < 1) { requestAnimationFrame(this.update.bind(this)); }
+                };
+            }
+        };
+
+        init();
+    </script>
+</body>
+</html></div><hr/><div id="post-comment"><div class="comment-head"><div class="comment-headline"><i class="anzhiyufont anzhiyu-icon-comments"></i><span> 评论</span></div><div class="comment-randomInfo"><a onclick="anzhiyu.addRandomCommentInfo()" href="javascript:void(0)">匿名评论</a><a href="/privacy" style="margin-left: 4px">隐私政策</a></div><div class="comment-tips" id="comment-tips"><span>✅ 你无需删除空行，直接评论以获取最佳展示效果</span></div></div><div class="comment-wrap"><div><div id="twikoo-wrap"></div></div></div></div><div class="comment-barrage"></div></div><div class="aside-content" id="aside-content"><div class="card-widget card-info"><div class="card-content"><div class="author-info__sayhi" id="author-info__sayhi" onclick="anzhiyu.changeSayHelloText()"></div><div class="author-info-avatar"><img class="avatar-img" src="https://i.imgs.ovh/2025/08/02/JVpsr.jpeg" onerror="this.onerror=null;this.src='/img/friend_404.gif'" alt="avatar"/><div class="author-status"><img class="g-status" src="/img/1.gif" alt="status"/></div></div><div class="author-info__description"><div style="line-height:1.38;margin:0.6rem 0;text-align:justify;color:rgba(255, 255, 255, 0.8);">欢迎来到我的博客~</div><div style="line-height:1.38;margin:0.6rem 0;text-align:justify;color:rgba(255, 255, 255, 0.8);"><b style="color:#fff">努力发光！！！</b></div></div><div class="author-info__bottom-group"><a class="author-info__bottom-group-left" href="/"><h1 class="author-info__name">liuxk</h1><div class="author-info__desc"></div></a><div class="card-info-social-icons is-center"><a class="social-icon faa-parent animated-hover" href="/img/wx.jpg" target="_blank" title="微信"><svg class="icon faa-tada" aria-hidden="true"><use xlink:href="#icon-weixin"></use></svg></a><a class="social-icon faa-parent animated-hover" href="https://res.abeim.cn/api/qq/?qq=2337961758" target="_blank" title="QQ"><svg class="icon faa-tada" aria-hidden="true"><use xlink:href="#icon-QQ"></use></svg></a><a class="social-icon faa-parent animated-hover" href="/img/dy.jpg" target="_blank" title="抖音"><svg class="icon faa-tada" aria-hidden="true"><use xlink:href="#icon-douying2"></use></svg></a></div></div></div></div><div class="card-widget card-announcement"><div class="item-headline"><i class="anzhiyufont anzhiyu-icon-bullhorn anzhiyu-shake"></i><span>公告</span></div><div class="announcement_content"><div id="welcome-info"></div></div></div><div class="sticky_layout"><div class="card-widget"><div class="card-tags"><div class="item-headline"></div><div class="card-tag-cloud"><a href="/tags/3D%E6%89%8B%E5%8A%BF%E7%B2%92%E5%AD%90%E5%9B%BE%E5%BD%A2/" style="font-size: 1.05rem;">3D手势粒子图形<sup>1</sup></a><a href="/tags/MBTI/" style="font-size: 1.05rem;">MBTI<sup>1</sup></a><a href="/tags/Markdown/" style="font-size: 1.05rem;">Markdown<sup>1</sup></a><a href="/tags/js%E5%90%8C%E6%AD%A5%E4%B8%8E%E5%BC%82%E6%AD%A5%E4%BB%BB%E5%8A%A1/" style="font-size: 1.05rem;">js同步与异步任务<sup>1</sup></a><a href="/tags/this%E7%94%A8%E6%B3%95/" style="font-size: 1.05rem;">this用法<sup>1</sup></a><a href="/tags/%E4%BA%BA%E6%A0%BC%E6%B5%8B%E8%AF%95/" style="font-size: 1.05rem;">人格测试<sup>1</sup></a><a href="/tags/%E5%A4%96%E6%8C%82%E6%A0%87%E7%AD%BE/" style="font-size: 1.05rem;">外挂标签<sup>1</sup></a><a href="/tags/%E6%AF%8F%E6%97%A5%E5%9B%BD%E9%99%85%E6%96%B0%E9%97%BB/" style="font-size: 1.05rem;">每日国际新闻<sup>1</sup></a><a href="/tags/%E7%94%B5%E8%84%91%E5%BF%85%E8%A3%85%E8%BD%AF%E4%BB%B6/" style="font-size: 1.05rem;">电脑必装软件<sup>1</sup></a><a href="/tags/%E8%B6%85%E6%B8%85%E5%A3%81%E7%BA%B8/" style="font-size: 1.05rem;">超清壁纸<sup>1</sup></a><a href="/tags/%E9%9A%BE%E9%A2%98%E4%B9%8B%E4%BB%8A%E6%99%9A%E5%90%83%E4%BB%80%E4%B9%88/" style="font-size: 1.05rem;">难题之今晚吃什么<sup>1</sup></a><a href="/tags/%E9%A3%9F%E8%B0%B1/" style="font-size: 1.05rem;">食谱<sup>1</sup></a></div></div><hr/><div class="card-archives"><div class="item-headline"><i class="anzhiyufont anzhiyu-icon-archive"></i><span>归档</span></div><ul class="card-archive-list"><li class="card-archive-list-item"><a class="card-archive-list-link" href="/archives/2026/01/"><span class="card-archive-list-date">一月 2026</span><div class="card-archive-list-count-group"><span class="card-archive-list-count">3</span><span>篇</span></div></a></li><li class="card-archive-list-item"><a class="card-archive-list-link" href="/archives/2025/09/"><span class="card-archive-list-date">九月 2025</span><div class="card-archive-list-count-group"><span class="card-archive-list-count">1</span><span>篇</span></div></a></li><li class="card-archive-list-item"><a class="card-archive-list-link" href="/archives/2025/07/"><span class="card-archive-list-date">七月 2025</span><div class="card-archive-list-count-group"><span class="card-archive-list-count">5</span><span>篇</span></div></a></li><li class="card-archive-list-item"><a class="card-archive-list-link" href="/archives/2025/06/"><span class="card-archive-list-date">六月 2025</span><div class="card-archive-list-count-group"><span class="card-archive-list-count">1</span><span>篇</span></div></a></li></ul></div><hr/><div class="card-webinfo"><div class="item-headline"><i class="anzhiyufont anzhiyu-icon-chart-line"></i><span>网站资讯</span></div><div class="webinfo"><div class="webinfo-item"><div class="webinfo-item-title"><i class="anzhiyufont anzhiyu-icon-file-lines"></i><div class="item-name">文章总数 :</div></div><div class="item-count">10</div></div><div class="webinfo-item"><div class="webinfo-item-title"><i class="anzhiyufont anzhiyu-icon-stopwatch"></i><div class="item-name">建站天数 :</div></div><div class="item-count" id="runtimeshow" data-publishDate="2025-05-31T16:00:00.000Z"><i class="anzhiyufont anzhiyu-icon-spinner anzhiyu-spin"></i></div></div><div class="webinfo-item"><div class="webinfo-item-title"><i class="anzhiyufont anzhiyu-icon-font"></i><div class="item-name">全站字数 :</div></div><div class="item-count">6.9k</div></div><div class="webinfo-item"><div class="webinfo-item-title"><i class="anzhiyufont anzhiyu-icon-universal-access"></i><div class="item-name">总访客数 :</div></div><div class="item-count" id="busuanzi_value_site_uv"><i class="anzhiyufont anzhiyu-icon-spinner anzhiyu-spin"></i></div></div><div class="webinfo-item"><div class="webinfo-item-title"><i class="anzhiyufont anzhiyu-icon-square-poll-vertical"></i><div class="item-name">总访问量 :</div></div><div class="item-count" id="busuanzi_value_site_pv"><i class="anzhiyufont anzhiyu-icon-spinner anzhiyu-spin"></i></div></div></div></div></div></div></div></div></main><footer id="footer"><div id="footer-wrap"><div id="footer_deal"><a class="deal_link" href="/null" title="email"><i class="anzhiyufont anzhiyu-icon-envelope"></i></a><a class="deal_link" target="_blank" rel="noopener" href="https://weibo.com/" title="微博"><i class="anzhiyufont anzhiyu-icon-weibo"></i></a><a class="deal_link" target="_blank" rel="noopener" href="https://www.facebook.com/" title="facebook"><i class="anzhiyufont anzhiyu-icon-facebook1"></i></a><img class="footer_mini_logo" title="返回顶部" alt="返回顶部" onclick="anzhiyu.scrollToDest(0, 500)" src="https://i.imgs.ovh/2025/08/02/JVpsr.jpeg" size="50px"/><a class="deal_link" target="_blank" rel="noopener" href="https://github.com/" title="Github"><i class="anzhiyufont anzhiyu-icon-github"></i></a><a class="deal_link" target="_blank" rel="noopener" href="https://space.bilibili.com/" title="Bilibili"><i class="anzhiyufont anzhiyu-icon-bilibili"></i></a><a class="deal_link" target="_blank" rel="noopener" href="https://v.douyin.com/" title="抖音"><i class="anzhiyufont anzhiyu-icon-tiktok"></i></a></div><div id="workboard"><img class="workSituationImg boardsign" src="/img/svg/sunFlower-营业中-6adea8.svg" alt="距离月入25k也就还差一个大佬带我~" title="距离月入25k也就还差一个大佬带我~"/><div id="runtimeTextTip"></div></div><div class="footer_custom_text">「故事在此停笔，但墨迹未干。你读的是我的昨天，而明天正在路上———若好奇结局，不妨等等看...」✨</div><p id="ghbdages"><a class="github-badge" target="_blank" href="https://hexo.io/" style="margin-inline:5px" data-title="博客框架为Hexo_v5.4.0" title="博客框架为Hexo_v5.4.0"><img src="https://npm.elemecdn.com/anzhiyu-blog@2.1.5/img/badge/Frame-Hexo.svg" alt="博客框架为Hexo_v5.4.0"/></a><a class="github-badge" target="_blank" href="https://butterfly.js.org/" style="margin-inline:5px" data-title="借鉴butterfly" title="借鉴butterfly"><img src="https://img.shields.io/badge/Theme-Butterfly-6513df?style=flat&amp;logo=bitdefender" alt="借鉴butterfly"/></a><a class="github-badge" target="_blank" href="https://www.jsdelivr.com/" style="margin-inline:5px" data-title="jsDelivr加速" title="jsDelivr加速"><img src="https://img.shields.io/badge/CDN-jsDelivr-orange?style=flat&amp;logo=jsDelivr" alt="jsDelivr加速"/></a><a class="github-badge" target="_blank" href="https://blog.anheyu.com/" style="margin-inline:5px" data-title="本站使用AnZhiYu主题" title="本站使用AnZhiYu主题"><img src="https://npm.elemecdn.com/anzhiyu-theme-static@1.0.9/img/Theme-AnZhiYu-2E67D3.svg" alt="本站使用AnZhiYu主题"/></a><a class="github-badge" target="_blank" href="https://www.dogecloud.com/" style="margin-inline:5px" data-title="本站使用多吉云为静态资源提供CDN加速" title="本站使用多吉云为静态资源提供CDN加速"><img src="https://npm.elemecdn.com/anzhiyu-blog@2.2.0/img/badge/CDN-多吉云-3693F3.svg" alt="本站使用多吉云为静态资源提供CDN加速"/></a><a class="github-badge" target="_blank" href="https://github.com/" style="margin-inline:5px" data-title="本站项目由Github托管" title="本站项目由Github托管"><img src="https://npm.elemecdn.com/anzhiyu-blog@2.1.5/img/badge/Source-Github.svg" alt="本站项目由Github托管"/></a><a class="github-badge" target="_blank" href="http://creativecommons.org/licenses/by-nc-sa/4.0/" style="margin-inline:5px" data-title="本站采用知识共享署名-非商业性使用-相同方式共享4.0国际许可协议进行许可" title="本站采用知识共享署名-非商业性使用-相同方式共享4.0国际许可协议进行许可"><img src="https://npm.elemecdn.com/anzhiyu-blog@2.2.0/img/badge/Copyright-BY-NC-SA.svg" alt="本站采用知识共享署名-非商业性使用-相同方式共享4.0国际许可协议进行许可"/></a></p></div><div id="footer-animal"><div class="animal-wall"></div><img class="animal entered loaded" src="https://i.imgs.ovh/2025/08/28/xEDf9.png" onerror="this.onerror=null;this.src='/img/404.jpg';" data-lazy-src="https://i.imgs.ovh/2025/08/28/xEsmm.webp" alt="动物" data-ll-status="loaded"/></div><div id="footer-bar"><div class="footer-bar-links"><div class="footer-bar-left"><div id="footer-bar-tips"><div class="copyright">&copy;2025 - 2026 By <a class="footer-bar-link" href="/" title="liuxk" target="_blank">liuxk</a></div></div><div id="footer-type-tips"></div><div class="js-pjax"><script>function subtitleType () {
+  fetch('https://v1.hitokoto.cn')
+    .then(response => response.json())
+    .then(data => {
+      if (true) {
+        const from = '出自 ' + data.from
+        const sub = []
+        sub.unshift(data.hitokoto, from)
+        window.typed = new Typed('#footer-type-tips', {
+          strings: sub,
+          startDelay: 300,
+          typeSpeed: 150,
+          loop: true,
+          backSpeed: 50,
+        })
+      } else {
+        document.getElementById('footer-type-tips').innerHTML = data.hitokoto
+      }
+    })
+}
+
+if (true) {
+  if (typeof Typed === 'function') {
+    subtitleType()
+  } else {
+    getScript('https://cdn.cbd.int/typed.js@2.1.0/dist/typed.umd.js').then(subtitleType)
+  }
+} else {
+  subtitleType()
+}
+</script></div></div><div class="footer-bar-right"><a class="footer-bar-link" target="_blank" rel="noopener" href="https://github.com/anzhiyu-c/hexo-theme-anzhiyu" title="主题">主题</a><a class="footer-bar-link" target="_blank" rel="noopener" href="https://image.anheyu.com" title="图床">图床</a><a class="footer-bar-link" target="_blank" rel="noopener" href="https://memoty48.github.io/memory48.github.io/" title="寻找记忆">寻找记忆</a><a class="footer-bar-link cc" href="/copyright" title="cc协议"><i class="anzhiyufont anzhiyu-icon-copyright-line"></i><i class="anzhiyufont anzhiyu-icon-creative-commons-by-line"></i><i class="anzhiyufont anzhiyu-icon-creative-commons-nc-line"></i><i class="anzhiyufont anzhiyu-icon-creative-commons-nd-line"></i></a></div></div></div></footer></div><div id="sidebar"><div id="menu-mask"></div><div id="sidebar-menus"><div class="sidebar-site-data site-data is-center"><a href="/archives/" title="archive"><div class="headline">文章</div><div class="length-num">10</div></a><a href="/tags/" title="tag"><div class="headline">标签</div><div class="length-num">12</div></a><a href="/categories/" title="category"><div class="headline">分类</div><div class="length-num">10</div></a></div><span class="sidebar-menu-item-title">功能</span><div class="sidebar-menu-item"><a class="darkmode_switchbutton menu-child" href="javascript:void(0);" title="白/夜模式切换"><i class="anzhiyufont anzhiyu-icon-circle-half-stroke"></i><span>白/夜模式切换</span></a></div><div class="back-menu-list-groups"><div class="back-menu-list-group"><div class="back-menu-list-title">网页</div><div class="back-menu-list"><a class="back-menu-item" href="https://www.liuxk.online/" title="博客"><img class="back-menu-item-icon" src="/img/favicon.ico" alt="博客"/><span class="back-menu-item-text">博客</span></a></div></div><div class="back-menu-list-group"><div class="back-menu-list-title">推荐壁纸</div><div class="back-menu-list"><a class="back-menu-item" target="_blank" rel="noopener" href="https://haowallpaper.com/" title="哲风壁纸"><img class="back-menu-item-icon" src="https://image.anheyu.com/favicon.ico" alt="哲风壁纸"/><span class="back-menu-item-text">哲风壁纸</span></a></div></div></div><div class="menus_items"><div class="menus_item"><a class="site-page" href="javascript:void(0);"><span> 文章</span></a><ul class="menus_item_child"><li><a class="site-page child faa-parent animated-hover" href="/archives/"><i class="anzhiyufont anzhiyu-icon-box-archive faa-tada" style="font-size: 0.9em;"></i><span> 隧道</span></a></li><li><a class="site-page child faa-parent animated-hover" href="/categories/"><i class="anzhiyufont anzhiyu-icon-shapes faa-tada" style="font-size: 0.9em;"></i><span> 分类</span></a></li><li><a class="site-page child faa-parent animated-hover" href="/tags/"><i class="anzhiyufont anzhiyu-icon-tags faa-tada" style="font-size: 0.9em;"></i><span> 标签</span></a></li></ul></div><div class="menus_item"><a class="site-page" href="javascript:void(0);"><span> 网站</span></a><ul class="menus_item_child"><li><a class="site-page child faa-parent animated-hover" href="/link/"><i class="anzhiyufont anzhiyu-icon-link faa-tada" style="font-size: 0.9em;"></i><span> 友人帐</span></a></li><li><a class="site-page child faa-parent animated-hover" href="/update/"><i class="anzhiyufont anzhiyu-icon-book faa-tada" style="font-size: 0.9em;"></i><span> 时间线</span></a></li><li><a class="site-page child faa-parent animated-hover" href="/fcircle/"><i class="anzhiyufont anzhiyu-icon-artstation faa-tada" style="font-size: 0.9em;"></i><span> 朋友圈</span></a></li><li><a class="site-page child faa-parent animated-hover" href="/story/"><i class="anzhiyufont anzhiyu-icon-envelope faa-tada" style="font-size: 0.9em;"></i><span> 故事</span></a></li><li><a class="site-page child faa-parent animated-hover" href="/comments/"><i class="anzhiyufont anzhiyu-icon-envelope faa-tada" style="font-size: 0.9em;"></i><span> 留言板</span></a></li></ul></div><div class="menus_item"><a class="site-page" href="javascript:void(0);"><span> 我的</span></a><ul class="menus_item_child"><li><a class="site-page child faa-parent animated-hover" href="/music/"><i class="anzhiyufont anzhiyu-icon-music faa-tada" style="font-size: 0.9em;"></i><span> 音乐馆</span></a></li><li><a class="site-page child faa-parent animated-hover" href="/album/"><i class="anzhiyufont anzhiyu-icon-images faa-tada" style="font-size: 0.9em;"></i><span> 相册集</span></a></li><li><a class="site-page child faa-parent animated-hover" href="/air-conditioner/"><i class="anzhiyufont anzhiyu-icon-fan faa-tada" style="font-size: 0.9em;"></i><span> 小空调</span></a></li></ul></div><div class="menus_item"><a class="site-page" href="javascript:void(0);"><span> 关于</span></a><ul class="menus_item_child"><li><a class="site-page child faa-parent animated-hover" href="/about/"><i class="anzhiyufont anzhiyu-icon-paper-plane faa-tada" style="font-size: 0.9em;"></i><span> 关于本人</span></a></li><li><a class="site-page child faa-parent animated-hover" href="/essay/"><i class="anzhiyufont anzhiyu-icon-lightbulb faa-tada" style="font-size: 0.9em;"></i><span> 即刻</span></a></li><li><a class="site-page child faa-parent animated-hover" href="javascript:toRandomPost()"><i class="anzhiyufont anzhiyu-icon-shoe-prints1 faa-tada" style="font-size: 0.9em;"></i><span> 随便逛逛</span></a></li></ul></div></div><span class="sidebar-menu-item-title">标签</span><div class="card-tags"><div class="item-headline"></div><div class="card-tag-cloud"><a href="/tags/3D%E6%89%8B%E5%8A%BF%E7%B2%92%E5%AD%90%E5%9B%BE%E5%BD%A2/" style="font-size: 0.88rem;">3D手势粒子图形<sup>1</sup></a><a href="/tags/MBTI/" style="font-size: 0.88rem;">MBTI<sup>1</sup></a><a href="/tags/Markdown/" style="font-size: 0.88rem;">Markdown<sup>1</sup></a><a href="/tags/js%E5%90%8C%E6%AD%A5%E4%B8%8E%E5%BC%82%E6%AD%A5%E4%BB%BB%E5%8A%A1/" style="font-size: 0.88rem;">js同步与异步任务<sup>1</sup></a><a href="/tags/this%E7%94%A8%E6%B3%95/" style="font-size: 0.88rem;">this用法<sup>1</sup></a><a href="/tags/%E4%BA%BA%E6%A0%BC%E6%B5%8B%E8%AF%95/" style="font-size: 0.88rem;">人格测试<sup>1</sup></a><a href="/tags/%E5%A4%96%E6%8C%82%E6%A0%87%E7%AD%BE/" style="font-size: 0.88rem;">外挂标签<sup>1</sup></a><a href="/tags/%E6%AF%8F%E6%97%A5%E5%9B%BD%E9%99%85%E6%96%B0%E9%97%BB/" style="font-size: 0.88rem;">每日国际新闻<sup>1</sup></a><a href="/tags/%E7%94%B5%E8%84%91%E5%BF%85%E8%A3%85%E8%BD%AF%E4%BB%B6/" style="font-size: 0.88rem;">电脑必装软件<sup>1</sup></a><a href="/tags/%E8%B6%85%E6%B8%85%E5%A3%81%E7%BA%B8/" style="font-size: 0.88rem;">超清壁纸<sup>1</sup></a><a href="/tags/%E9%9A%BE%E9%A2%98%E4%B9%8B%E4%BB%8A%E6%99%9A%E5%90%83%E4%BB%80%E4%B9%88/" style="font-size: 0.88rem;">难题之今晚吃什么<sup>1</sup></a><a href="/tags/%E9%A3%9F%E8%B0%B1/" style="font-size: 0.88rem;">食谱<sup>1</sup></a></div></div><hr/></div></div><div id="rightside"><div id="rightside-config-hide"><button id="translateLink" type="button" title="简繁转换">繁</button><button id="darkmode" type="button" title="浅色和深色模式转换"><i class="anzhiyufont anzhiyu-icon-circle-half-stroke"></i></button><button id="hide-aside-btn" type="button" title="单栏和双栏切换"><i class="anzhiyufont anzhiyu-icon-arrows-left-right"></i></button></div><div id="rightside-config-show"><button id="rightside-config" type="button" title="设置"><i class="anzhiyufont anzhiyu-icon-gear"></i></button><a id="to_comment" href="#post-comment" title="直达评论"><i class="anzhiyufont anzhiyu-icon-comments"></i></a><a id="switch-commentBarrage" href="javascript:anzhiyu.switchCommentBarrage();" title="开关弹幕"><i class="anzhiyufont anzhiyu-icon-danmu"></i></a><button id="go-up" type="button" title="回到顶部"><i class="anzhiyufont anzhiyu-icon-arrow-up"></i></button></div></div><div id="nav-music"><a id="nav-music-hoverTips" onclick="anzhiyu.musicToggle()" accesskey="m">播放音乐</a><div id="console-music-bg"></div><meting-js id="14044452884" server="netease" type="playlist" mutex="true" preload="none" theme="var(--anzhiyu-main)" data-lrctype="0" order="random" volume="0.6"></meting-js></div><div id="local-search"><div class="search-dialog"><nav class="search-nav"><span class="search-dialog-title">搜索</span><span id="loading-status"></span><button class="search-close-button"><i class="anzhiyufont anzhiyu-icon-xmark"></i></button></nav><div class="is-center" id="loading-database"><i class="anzhiyufont anzhiyu-icon-spinner anzhiyu-pulse-icon"></i><span>  数据库加载中</span></div><div class="search-wrap"><div id="local-search-input"><div class="local-search-box"><input class="local-search-box--input" placeholder="搜索文章" type="text"/></div></div><hr/><div id="local-search-results"></div></div></div><div id="search-mask"></div></div><div id="rightMenu"><div class="rightMenu-group rightMenu-small"><div class="rightMenu-item" id="menu-backward"><i class="anzhiyufont anzhiyu-icon-arrow-left"></i></div><div class="rightMenu-item" id="menu-forward"><i class="anzhiyufont anzhiyu-icon-arrow-right"></i></div><div class="rightMenu-item" id="menu-refresh"><i class="anzhiyufont anzhiyu-icon-arrow-rotate-right" style="font-size: 1rem;"></i></div><div class="rightMenu-item" id="menu-top"><i class="anzhiyufont anzhiyu-icon-arrow-up"></i></div></div><div class="rightMenu-group rightMenu-line rightMenuPlugin"><div class="rightMenu-item" id="menu-copytext"><i class="anzhiyufont anzhiyu-icon-copy"></i><span>复制选中文本</span></div><div class="rightMenu-item" id="menu-pastetext"><i class="anzhiyufont anzhiyu-icon-paste"></i><span>粘贴文本</span></div><a class="rightMenu-item" id="menu-commenttext"><i class="anzhiyufont anzhiyu-icon-comment-medical"></i><span>引用到评论</span></a><div class="rightMenu-item" id="menu-newwindow"><i class="anzhiyufont anzhiyu-icon-window-restore"></i><span>新窗口打开</span></div><div class="rightMenu-item" id="menu-copylink"><i class="anzhiyufont anzhiyu-icon-link"></i><span>复制链接地址</span></div><div class="rightMenu-item" id="menu-copyimg"><i class="anzhiyufont anzhiyu-icon-images"></i><span>复制此图片</span></div><div class="rightMenu-item" id="menu-downloadimg"><i class="anzhiyufont anzhiyu-icon-download"></i><span>下载此图片</span></div><div class="rightMenu-item" id="menu-newwindowimg"><i class="anzhiyufont anzhiyu-icon-window-restore"></i><span>新窗口打开图片</span></div><div class="rightMenu-item" id="menu-search"><i class="anzhiyufont anzhiyu-icon-magnifying-glass"></i><span>站内搜索</span></div><div class="rightMenu-item" id="menu-searchBaidu"><i class="anzhiyufont anzhiyu-icon-magnifying-glass"></i><span>百度搜索</span></div><div class="rightMenu-item" id="menu-music-toggle"><i class="anzhiyufont anzhiyu-icon-play"></i><span>播放音乐</span></div><div class="rightMenu-item" id="menu-music-back"><i class="anzhiyufont anzhiyu-icon-backward"></i><span>切换到上一首</span></div><div class="rightMenu-item" id="menu-music-forward"><i class="anzhiyufont anzhiyu-icon-forward"></i><span>切换到下一首</span></div><div class="rightMenu-item" id="menu-music-playlist" onclick="window.open(&quot;https://y.qq.com/n/ryqq/playlist/14044452884&quot;, &quot;_blank&quot;);" style="display: none;"><i class="anzhiyufont anzhiyu-icon-radio"></i><span>查看所有歌曲</span></div><div class="rightMenu-item" id="menu-music-copyMusicName"><i class="anzhiyufont anzhiyu-icon-copy"></i><span>复制歌名</span></div></div><div class="rightMenu-group rightMenu-line rightMenuOther"><a class="rightMenu-item menu-link" id="menu-randomPost"><i class="anzhiyufont anzhiyu-icon-shuffle"></i><span>随便逛逛</span></a><a class="rightMenu-item menu-link" href="/categories/"><i class="anzhiyufont anzhiyu-icon-cube"></i><span>博客分类</span></a><a class="rightMenu-item menu-link" href="/tags/"><i class="anzhiyufont anzhiyu-icon-tags"></i><span>文章标签</span></a></div><div class="rightMenu-group rightMenu-line rightMenuOther"><a class="rightMenu-item" id="menu-copy" href="javascript:void(0);"><i class="anzhiyufont anzhiyu-icon-copy"></i><span>复制地址</span></a><a class="rightMenu-item" id="menu-commentBarrage" href="javascript:void(0);"><i class="anzhiyufont anzhiyu-icon-message"></i><span class="menu-commentBarrage-text">关闭热评</span></a><a class="rightMenu-item" id="menu-darkmode" href="javascript:void(0);"><i class="anzhiyufont anzhiyu-icon-circle-half-stroke"></i><span class="menu-darkmode-text">深色模式</span></a><a class="rightMenu-item" id="menu-translate" href="javascript:void(0);"><i class="anzhiyufont anzhiyu-icon-language"></i><span>轉為繁體</span></a></div></div><div id="rightmenu-mask"></div><div><script src="/js/utils.js"></script><script src="/js/main.js"></script><script src="/js/tw_cn.js"></script><script src="https://cdn.cbd.int/@fancyapps/ui@5.0.28/dist/fancybox/fancybox.umd.js"></script><script src="https://cdn.cbd.int/instant.page@5.2.0/instantpage.js" type="module"></script><script src="https://cdn.cbd.int/vanilla-lazyload@17.8.5/dist/lazyload.iife.min.js"></script><script src="https://cdn.cbd.int/node-snackbar@0.1.16/dist/snackbar.min.js"></script><canvas id="universe"></canvas><script async src="/js/dark.js"></script><script>// 消除控制台打印
+var HoldLog = console.log;
+console.log = function () {};
+let now1 = new Date();
+queueMicrotask(() => {
+  //- const Log = function () {
+  //-   HoldLog.apply(console, arguments);
+  //- }; //在恢复前输出日志
+  //- const grt = new Date("06/01/2025 00:00:00"); //此处修改你的建站时间或者网站上线时间
+  //- now1.setTime(now1.getTime() + 250);
+  //- const days = (now1 - grt) / 1000 / 60 / 60 / 24;
+  //- const dnum = Math.floor(days);
+  //- const ascll = [
+  //-   `欢迎使用安知鱼!`,
+  //-   `生活明朗, 万物可爱`,
+  //-   `
+        
+  //-      █████╗ ███╗   ██╗███████╗██╗  ██╗██╗██╗   ██╗██╗   ██╗
+  //-     ██╔══██╗████╗  ██║╚══███╔╝██║  ██║██║╚██╗ ██╔╝██║   ██║
+  //-     ███████║██╔██╗ ██║  ███╔╝ ███████║██║ ╚████╔╝ ██║   ██║
+  //-     ██╔══██║██║╚██╗██║ ███╔╝  ██╔══██║██║  ╚██╔╝  ██║   ██║
+  //-     ██║  ██║██║ ╚████║███████╗██║  ██║██║   ██║   ╚██████╔╝
+  //-     ╚═╝  ╚═╝╚═╝  ╚═══╝╚══════╝╚═╝  ╚═╝╚═╝   ╚═╝    ╚═════╝
+        
+  //-       `,
+  //-   "已上线",
+  //-   dnum,
+  //-   "天",
+  //-   "©2025 By 安知鱼 V1.6.14",
+  //- ];
+  //- const ascll2 = [`NCC2-036`, `调用前置摄像头拍照成功，识别为【小笨蛋】.`, `Photo captured: `, `🤪`];
+
+  //- setTimeout(
+  //-   Log.bind(
+  //-     console,
+  //-     `\n%c${ascll[0]} %c ${ascll[1]} %c ${ascll[2]} %c${ascll[3]}%c ${ascll[4]}%c ${ascll[5]}\n\n%c ${ascll[6]}\n`,
+  //-     "color:#425AEF",
+  //-     "",
+  //-     "color:#425AEF",
+  //-     "color:#425AEF",
+  //-     "",
+  //-     "color:#425AEF",
+  //-     ""
+  //-   )
+  //- );
+  //- setTimeout(
+  //-   Log.bind(
+  //-     console,
+  //-     `%c ${ascll2[0]} %c ${ascll2[1]} %c \n${ascll2[2]} %c\n${ascll2[3]}\n`,
+  //-     "color:white; background-color:#4fd953",
+  //-     "",
+  //-     "",
+  //-     'background:url("https://npm.elemecdn.com/anzhiyu-blog@1.1.6/img/post/common/tinggge.gif") no-repeat;font-size:450%'
+  //-   )
+  //- );
+
+  //- setTimeout(Log.bind(console, "%c WELCOME %c 你好，小笨蛋.", "color:white; background-color:#4f90d9", ""));
+
+  //- setTimeout(
+  //-   console.warn.bind(
+  //-     console,
+  //-     "%c ⚡ Powered by 安知鱼 %c 你正在访问 liuxk 的博客.",
+  //-     "color:white; background-color:#f0ad4e",
+  //-     ""
+  //-   )
+  //- );
+
+  //- setTimeout(Log.bind(console, "%c W23-12 %c 你已打开控制台.", "color:white; background-color:#4f90d9", ""));
+
+  //- setTimeout(
+    //- console.warn.bind(console, "%c S013-782 %c 你现在正处于监控中.", "color:white; background-color:#d9534f", "")
+  //- );
+});</script><script async src="/anzhiyu/random.js"></script><script async="async">(function () {
+  var grt = new Date("06/01/2025 00:00:00"); //设置网站上线时间
+  var now = new Date();
+  var dnum;
+  var hnum;
+  var mnum;
+  var snum;
+  var nowHour;
+
+  // 计算并更新天数、小时数、分钟数和秒数
+  function updateTime() {
+    now = new Date(); // 更新 now 的值
+    nowHour = now.getHours(); // 更新 nowHour 的值
+    var days = (now - grt) / 1000 / 60 / 60 / 24;
+    dnum = Math.floor(days);
+    var hours = (now - grt) / 1000 / 60 / 60 - 24 * dnum;
+    hnum = Math.floor(hours);
+    if (String(hnum).length == 1) {
+      hnum = "0" + hnum;
+    }
+    var minutes = (now - grt) / 1000 / 60 - 24 * 60 * dnum - 60 * hnum;
+    mnum = Math.floor(minutes);
+    if (String(mnum).length == 1) {
+      mnum = "0" + mnum;
+    }
+    var seconds = (now - grt) / 1000 - 24 * 60 * 60 * dnum - 60 * 60 * hnum - 60 * mnum;
+    snum = Math.round(seconds);
+    if (String(snum).length == 1) {
+      snum = "0" + snum;
+    }
+  }
+
+  // 更新网页中显示的网站运行时间
+  function updateHtml() {
+    const footer = document.getElementById("footer");
+    if (!footer) return
+    let currentTimeHtml = "";
+    if (nowHour < 18 && nowHour >= 9) {
+      // 如果是上班时间，默认就是"安知鱼-上班摸鱼中.svg"图片，不需要更改
+      currentTimeHtml = `本站居然运行了 ${dnum} 天<span id='runtime'> ${hnum} 小时 ${mnum} 分 ${snum} 秒 </span><i class='anzhiyufont anzhiyu-icon-heartbeat' style='color:red'></i>`;
+    } else {
+      // 如果是下班时间，插入"安知鱼-下班啦.svg"图片
+      let img = document.querySelector("#workboard .workSituationImg");
+      if (img != null) {
+        img.src = "/img/svg/sunFlower-打烊了-6adea8.svg";
+        img.title = "下班了就该开开心心的玩耍，嘿嘿~";
+        img.alt = "下班了就该开开心心的玩耍，嘿嘿~";
+      }
+
+      currentTimeHtml = `本站居然运行了 ${dnum} 天<span id='runtime'> ${hnum} 小时 ${mnum} 分 ${snum} 秒 </span><i class='anzhiyufont anzhiyu-icon-heartbeat' style='color:red'></i>`;
+    }
+
+    if (document.getElementById("runtimeTextTip")) {
+      document.getElementById("runtimeTextTip").innerHTML = currentTimeHtml;
+    }
+  }
+
+  setInterval(() => {
+    updateTime();
+    updateHtml();
+  }, 1000);
+})();</script><script src="/js/search/local-search.js"></script><div class="js-pjax"><script>(() => {
+  const init = () => {
+    twikoo.init(Object.assign({
+      el: '#twikoo-wrap',
+      envId: 'https://xktwikoo.liuxk.online',
+      region: '',
+      onCommentLoaded: () => {
+        anzhiyu.loadLightbox(document.querySelectorAll('#twikoo .tk-content img:not(.tk-owo-emotion)'))
+      }
+    }, null))
+  }
+
+  const loadTwikoo = () => {
+    if (typeof twikoo === 'object') setTimeout(runFn,0)
+    else getScript('https://cdn.cbd.int/twikoo@1.6.44/dist/twikoo.all.min.js').then(runFn)
+  }
+
+  const getCount = () => {
+    const countELement = document.getElementById('twikoo-count')
+    if(!countELement) return
+    twikoo.getCommentsCount({
+      envId: 'https://xktwikoo.liuxk.online',
+      region: '',
+      urls: [window.location.pathname],
+      includeReply: false
+    }).then(res => {
+      countELement.textContent = res[0].count
+    }).catch(err => {
+      console.error(err)
+    })
+  }
+
+  const runFn = () => {
+    init();
+    
+  }
+
+  if ('Twikoo' === 'Twikoo' || !true) {
+    if (true) anzhiyu.loadComment(document.getElementById('twikoo-wrap'), loadTwikoo)
+    else {
+      loadTwikoo()
+    }
+  } else {
+    window.loadOtherComment = loadTwikoo
+  }
+})()</script><input type="hidden" name="page-type" id="page-type" value="anzhiyu"><script async src="/js/anzhiyu/comment_barrage.js"></script></div><script>window.addEventListener('load', () => {
+  const changeContent = (content) => {
+    if (content === '') return content
+
+    content = content.replace(/<img.*?src="(.*?)"?[^\>]+>/ig, '[图片]') // replace image link
+    content = content.replace(/<a[^>]+?href=["']?([^"']+)["']?[^>]*>([^<]+)<\/a>/gi, '[链接]') // replace url
+    content = content.replace(/<pre><code>.*?<\/pre>/gi, '[代码]') // replace code
+    content = content.replace(/<[^>]+>/g,"") // remove html tag
+
+    if (content.length > 150) {
+      content = content.substring(0,150) + '...'
+    }
+    return content
+  }
+
+  const getComment = () => {
+    const runTwikoo = () => {
+      twikoo.getRecentComments({
+        envId: 'https://xktwikoo.liuxk.online',
+        region: '',
+        pageSize: 6,
+        includeReply: true
+      }).then(function (res) {
+        const twikooArray = res.map(e => {
+          return {
+            'content': changeContent(e.comment),
+            'avatar': e.avatar,
+            'nick': e.nick,
+            'url': e.url + '#' + e.id,
+            'date': new Date(e.created).toISOString()
+          }
+        })
+
+        saveToLocal.set('twikoo-newest-comments', JSON.stringify(twikooArray), 10/(60*24))
+        generateHtml(twikooArray)
+      }).catch(function (err) {
+        const $dom = document.querySelector('#card-newest-comments .aside-list')
+        $dom.textContent= "无法获取评论，请确认相关配置是否正确"
+      })
+    }
+
+    if (typeof twikoo === 'object') {
+      runTwikoo()
+    } else {
+      getScript('https://cdn.cbd.int/twikoo@1.6.44/dist/twikoo.all.min.js').then(runTwikoo)
+    }
+  }
+
+  const generateHtml = array => {
+    let result = ''
+
+    if (array.length) {
+      for (let i = 0; i < array.length; i++) {
+        result += '<div class=\'aside-list-item\'>'
+
+        if (true) {
+          const name = 'data-lazy-src'
+          result += `<a href='${array[i].url}' class='thumbnail'><img ${name}='${array[i].avatar}' alt='${array[i].nick}'><div class='name'><span>${array[i].nick} </span></div></a>`
+        }
+        
+        result += `<div class='content'>
+        <a class='comment' href='${array[i].url}' title='${array[i].content}'>${array[i].content}</a>
+        <time datetime="${array[i].date}">${anzhiyu.diffDate(array[i].date, true)}</time></div>
+        </div>`
+      }
+    } else {
+      result += '没有评论'
+    }
+
+    let $dom = document.querySelector('#card-newest-comments .aside-list')
+    $dom && ($dom.innerHTML= result)
+    window.lazyLoadInstance && window.lazyLoadInstance.update()
+    window.pjax && window.pjax.refresh($dom)
+  }
+
+  const newestCommentInit = () => {
+    if (document.querySelector('#card-newest-comments .aside-list')) {
+      const data = saveToLocal.get('twikoo-newest-comments')
+      if (data) {
+        generateHtml(JSON.parse(data))
+      } else {
+        getComment()
+      }
+    }
+  }
+
+  newestCommentInit()
+  document.addEventListener('pjax:complete', newestCommentInit)
+})</script><script>var visitorMail = "";
+</script><script async data-pjax src="https://cdn.cbd.int/anzhiyu-theme-static@1.0.0/waterfall/waterfall.js"></script><script src="/js/wenzhangerweima/qrcode.min.js"></script><script src="/js/anzhiyu/right_click_menu.js"></script><link rel="stylesheet" href="https://cdn.cbd.int/anzhiyu-theme-static@1.1.9/icon/ali_iconfont_css.css"><script async data-pjax src="/js/imgloaded.js?1"></script><script async src="//at.alicdn.com/t/c/font_4985042_f3h9475uiqc.js"></script><canvas class="fireworks" mobile="true"></canvas><script src="https://cdn.cbd.int/butterfly-extsrc@1.1.3/dist/fireworks.min.js"></script><script id="click-heart" src="https://cdn.cbd.int/butterfly-extsrc@1.1.3/dist/click-heart.min.js" async="async" mobile="true"></script><script id="click-show-text" src="https://cdn.cbd.int/butterfly-extsrc@1.1.3/dist/click-show-text.min.js" data-mobile="true" data-text="I,LOVE,YOU" data-fontsize="15px" data-random="true" async="async"></script><link rel="stylesheet" href="https://cdn.cbd.int/anzhiyu-theme-static@1.0.0/aplayer/APlayer.min.css" media="print" onload="this.media='all'"><script src="https://cdn.cbd.int/anzhiyu-blog-static@1.0.1/js/APlayer.min.js"></script><script src="https://cdn.cbd.int/hexo-anzhiyu-music@1.0.1/assets/js/Meting2.min.js"></script><script src="https://cdn.cbd.int/pjax@0.2.8/pjax.min.js"></script><script>let pjaxSelectors = ["meta[property=\"og:image\"]","meta[property=\"og:title\"]","meta[property=\"og:url\"]","meta[property=\"og:type\"]","meta[property=\"og:site_name\"]","meta[property=\"og:description\"]","head > title","#config-diff","#body-wrap","#rightside-config-hide","#rightside-config-show",".js-pjax"]
+var pjax = new Pjax({
+  elements: 'a:not([target="_blank"])',
+  selectors: pjaxSelectors,
+  cacheBust: false,
+  analytics: false,
+  scrollRestoration: false
+})
+
+document.addEventListener('pjax:send', function () {
+  // removeEventListener scroll 
+  anzhiyu.removeGlobalFnEvent('pjax')
+  anzhiyu.removeGlobalFnEvent('themeChange')
+
+  document.getElementById('rightside').classList.remove('rightside-show')
+  
+  if (window.aplayers) {
+    for (let i = 0; i < window.aplayers.length; i++) {
+      if (!window.aplayers[i].options.fixed) {
+        window.aplayers[i].destroy()
+      }
+    }
+  }
+
+  typeof typed === 'object' && typed.destroy()
+
+  //reset readmode
+  const $bodyClassList = document.body.classList
+  $bodyClassList.contains('read-mode') && $bodyClassList.remove('read-mode')
+})
+
+document.addEventListener('pjax:complete', function () {
+  window.refreshFn()
+
+  document.querySelectorAll('script[data-pjax]').forEach(item => {
+    const newScript = document.createElement('script')
+    const content = item.text || item.textContent || item.innerHTML || ""
+    Array.from(item.attributes).forEach(attr => newScript.setAttribute(attr.name, attr.value))
+    newScript.appendChild(document.createTextNode(content))
+    item.parentNode.replaceChild(newScript, item)
+  })
+
+  GLOBAL_CONFIG.islazyload && window.lazyLoadInstance.update()
+
+  typeof panguInit === 'function' && panguInit()
+
+  // google analytics
+  typeof gtag === 'function' && gtag('config', '', {'page_path': window.location.pathname});
+
+  // baidu analytics
+  typeof _hmt === 'object' && _hmt.push(['_trackPageview',window.location.pathname]);
+
+  typeof loadMeting === 'function' && document.getElementsByClassName('aplayer').length && loadMeting()
+
+  // prismjs
+  typeof Prism === 'object' && Prism.highlightAll()
+})
+
+document.addEventListener('pjax:error', e => {
+  if (e.request.status === 404) {
+    pjax.loadUrl('/404.html')
+  }
+})</script><script async data-pjax src="/js/busuanzi.pure.mini.js"></script><script charset="UTF-8" src="https://cdn.cbd.int/anzhiyu-theme-static@1.1.5/accesskey/accesskey.js"></script></div><div id="popup-window"><div class="popup-window-title">通知</div><div class="popup-window-divider"></div><div class="popup-window-content"><div class="popup-tip">你好呀</div><div class="popup-link"><i class="anzhiyufont anzhiyu-icon-arrow-circle-right"></i></div></div></div></body></html>
