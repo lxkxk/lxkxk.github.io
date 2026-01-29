@@ -3117,7 +3117,7 @@ blockquote > :last-child {
 /* 修改灯笼的字体 */
 
 .d-box .d1::after {
-    content: 'xrk~';
+    content: 'SG~';
 }
 
 .d-box1 .d1::after {
