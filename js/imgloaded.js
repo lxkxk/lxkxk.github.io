@@ -72,8 +72,8 @@
       largeSrc: 'https://i.imgs.ovh/2026/01/14/yrIDLY.jpeg', //深色模式 大图链接 最终显示的图片
       // mobileSmallSrc: 'https://i.imgs.ovh/2025/08/28/xxcHn.jpeg', //手机端深色模式小图链接 尽可能配置小于100k的图片
       // mobileLargeSrc: 'https://i.imgs.ovh/2025/08/28/xxcHn.jpeg', //手机端深色大图链接 最终显示的图片
-      mobileSmallSrc: 'https://i.imgs.ovh/2026/01/29/yMUXyx.jpeg', //手机端深色模式小图链接 尽可能配置小于100k的图片
-      mobileLargeSrc: 'https://i.imgs.ovh/2026/01/29/yMUXyx.jpeg', //手机端深色大图链接 最终显示的图片
+      mobileSmallSrc: 'https://i.imgs.ovh/2026/01/29/yMUqmq.jpeg', //手机端深色模式小图链接 尽可能配置小于100k的图片
+      mobileLargeSrc: 'https://i.imgs.ovh/2026/01/29/yMUqmq.jpeg', //手机端深色大图链接 最终显示的图片
       enableRoutes: ['/'],
     },
   };
