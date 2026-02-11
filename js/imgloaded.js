@@ -63,8 +63,8 @@
       largeSrc: 'https://i.imgs.ovh/2026/01/14/yrIPG1.jpeg', //浅色模式 大图链接 最终显示的图片
       // mobileSmallSrc: 'https://i.imgs.ovh/2025/08/02/JVe39.jpeg', //手机端浅色小图链接 尽可能配置小于100k的图片
       // mobileLargeSrc: 'https://i.imgs.ovh/2025/08/02/JVe39.jpeg', //手机端浅色大图链接 最终显示的图片
-      mobileSmallSrc: 'https://i.imgs.ovh/2026/01/28/y9UPRg.jpeg', //手机端浅色小图链接 尽可能配置小于100k的图片
-      mobileLargeSrc: 'https://i.imgs.ovh/2026/01/28/y9UPRg.jpeg', //手机端浅色大图链接 最终显示的图片
+      mobileSmallSrc: 'https://i.imgs.ovh/2026/02/11/yID2rq.jpeg', //手机端浅色小图链接 尽可能配置小于100k的图片
+      mobileLargeSrc: 'https://i.imgs.ovh/2026/02/11/yID2rq.jpeg', //手机端浅色大图链接 最终显示的图片
       enableRoutes: ['/'],
     },
     dark: {
