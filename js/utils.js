@@ -1494,7 +1494,8 @@ const NaoKuo = {
   showWelcome: (ipStore) => {
     const WelcomeInfo = document.getElementById("welcome-info"),
       IP = ipStore.result.ip || "未知";
-    let dist = NaoKuo.getDistance(116.04219, 39.88517, ipStore.result.location.lng, ipStore.result.location.lat),
+    // 经纬度 116.04219, 39.88517-北京朝阳  117.06523, 36.68073-济南历城区
+    let dist = NaoKuo.getDistance(117.06523, 36.68073, ipStore.result.location.lng, ipStore.result.location.lat),
       address,
       welcome_info;
     //根据国家、省份、城市信息自定义欢迎语
