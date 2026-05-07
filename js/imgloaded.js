@@ -59,19 +59,19 @@
 
   const ldconfig = {
     light: {
-      smallSrc: 'https://i.imgs.ovh/2026/01/14/yrIPG1.jpeg', //浅色模式 小图链接 尽可能配置小于100k的图片 
-      largeSrc: 'https://i.imgs.ovh/2026/01/14/yrIPG1.jpeg', //浅色模式 大图链接 最终显示的图片
-      mobileSmallSrc: 'https://i.imgs.ovh/2025/08/02/JVe39.jpeg', //手机端浅色小图链接 尽可能配置小于100k的图片
-      mobileLargeSrc: 'https://i.imgs.ovh/2025/08/02/JVe39.jpeg', //手机端浅色大图链接 最终显示的图片
+      smallSrc: 'https://bu.dusays.com/2026/05/07/69fc91fca2eb4.png', //浅色模式 小图链接 尽可能配置小于100k的图片 
+      largeSrc: 'https://bu.dusays.com/2026/05/07/69fc91fca2eb4.png', //浅色模式 大图链接 最终显示的图片
+      mobileSmallSrc: 'https://bu.dusays.com/2026/05/07/69fc92f2bc433.jpg', //手机端浅色小图链接 尽可能配置小于100k的图片
+      mobileLargeSrc: 'https://bu.dusays.com/2026/05/07/69fc92f2bc433.jpg', //手机端浅色大图链接 最终显示的图片
       // mobileSmallSrc: 'https://i.imgs.ovh/2026/02/11/yID2rq.jpeg', //手机端浅色小图链接 尽可能配置小于100k的图片
       // mobileLargeSrc: 'https://i.imgs.ovh/2026/02/11/yID2rq.jpeg', //手机端浅色大图链接 最终显示的图片
       enableRoutes: ['/'],
     },
     dark: {
-      smallSrc: 'https://i.imgs.ovh/2026/01/14/yrIDLY.jpeg', //深色模式 小图链接 尽可能配置小于100k的图片 
-      largeSrc: 'https://i.imgs.ovh/2026/01/14/yrIDLY.jpeg', //深色模式 大图链接 最终显示的图片
-      mobileSmallSrc: 'https://i.imgs.ovh/2025/08/28/xxcHn.jpeg', //手机端深色模式小图链接 尽可能配置小于100k的图片
-      mobileLargeSrc: 'https://i.imgs.ovh/2025/08/28/xxcHn.jpeg', //手机端深色大图链接 最终显示的图片
+      smallSrc: 'https://bu.dusays.com/2026/05/07/69fc91fb121ef.png', //深色模式 小图链接 尽可能配置小于100k的图片 
+      largeSrc: 'https://bu.dusays.com/2026/05/07/69fc91fb121ef.png', //深色模式 大图链接 最终显示的图片
+      mobileSmallSrc: 'https://bu.dusays.com/2026/05/07/69fc91f9bc021.jpg', //手机端深色模式小图链接 尽可能配置小于100k的图片
+      mobileLargeSrc: 'https://bu.dusays.com/2026/05/07/69fc91f9bc021.jpg', //手机端深色大图链接 最终显示的图片
       // mobileSmallSrc: 'https://i.imgs.ovh/2026/01/29/yMUqmq.jpeg', //手机端深色模式小图链接 尽可能配置小于100k的图片
       // mobileLargeSrc: 'https://i.imgs.ovh/2026/01/29/yMUqmq.jpeg', //手机端深色大图链接 最终显示的图片
       enableRoutes: ['/'],
